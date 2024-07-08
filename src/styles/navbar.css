@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar1 {
+ @apply w-10/12 mx-auto flex gap-5 justify-between items-center px-5 text-xl font-bold leading-7 text-white max-md:flex-wrap;
+}
+.navbar2{
+    @apply mx-auto px-4 text-[#000d6b] py-5 font-bold
+}
+.navbar3{
+    @apply w-10/12 mx-auto  flex gap-5 justify-between items-center px-5 py-2 text-xl font-bold leading-7 text-white max-md:flex-wrap;
+}
