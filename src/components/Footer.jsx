@@ -2,11 +2,11 @@ import * as React from "react";
 
 function Footer() {
   return (
-    <div className="bg-[#0006bd]">
+    <div className="bg-[#000d6b]">
     <div className="flex  w-10/12 mx-auto justify-center items-center  py-10 text-white  leading-[185%] max-md:px-5">
       <div className="flex gap-5 justify-between items-start w-full max-w-[1402px] max-md:flex-wrap max-md:max-w-full">
         <div className="flex flex-col text-base">
-          <div className="text-xl font-medium leading-6 capitalize">
+          <div className="text-xl font-bold leading-6 capitalize">
             Company
           </div>
           <div className="mt-7">About Us</div>
@@ -17,7 +17,7 @@ function Footer() {
           <div className="mt-7">Contact Us</div>
         </div>
         <div className="flex flex-col text-base">
-          <div className="text-xl font-medium leading-6 capitalize">
+          <div className="text-xl font-bold leading-6 capitalize">
             Quick Links
           </div>
           <div className="mt-7">Get in Touch</div>
@@ -26,7 +26,7 @@ function Footer() {
           <div className="mt-7">How it works</div>
         </div>
         <div className="flex flex-col self-stretch text-base">
-          <div className="text-xl font-medium leading-6 capitalize">
+          <div className="text-xl font-bold leading-6 capitalize">
             Our Brands
           </div>
           <div className="mt-8">Toyota</div>
@@ -37,7 +37,7 @@ function Footer() {
           <div className="mt-7">Nissan</div>
         </div>
         <div className="flex flex-col self-stretch text-base">
-          <div className="text-xl font-medium leading-6 capitalize">
+          <div className="text-xl font-bold leading-6 capitalize">
             Vehicles Type
           </div>
           <div className="mt-7">Sedan</div>
@@ -48,12 +48,12 @@ function Footer() {
           <div className="mt-7">Coupe</div>
         </div>
         <div className="flex flex-col leading-[100%]">
-          <div className="text-xl font-medium">Our Mobile App</div>
+          <div className="text-xl font-bold">Our Mobile App</div>
           <div className="flex gap-5 justify-between px-9 py-3.5 mt-8 rounded-2xl bg-white bg-opacity-10 max-md:px-5">
             <div className="my-auto text-2xl"></div>
             <div className="flex flex-col">
               <div className="text-xs">Download on the</div>
-              <div className="mt-2.5 text-base font-medium">Apple Store</div>
+              <div className="mt-2.5 text-base font-bold">Apple Store</div>
             </div>
           </div>
           <div className="flex gap-5 py-3.5 pr-14 pl-6 mt-3 rounded-2xl bg-white bg-opacity-10 max-md:px-5">
@@ -63,7 +63,7 @@ function Footer() {
               <div className="mt-2.5 text-base font-medium">Google Play</div>
             </div>
           </div>
-          <div className="mt-9 text-xl font-medium">Connect With Us</div>
+          <div className="mt-9 text-xl font-bold">Connect With Us</div>
           <div className="flex gap-5 justify-between mt-11 text-base text-center whitespace-nowrap max-md:mt-10">
             <div></div>
             <div></div>

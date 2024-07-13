@@ -1,12 +1,16 @@
 import React from "react";
+import {motion} from "framer-motion"
 
 function SellingCar() {
   return (
-    <div className="flex flex-col md:flex-row mx-auto w-10/12 gap-10 pt-4">
+    <motion.div
+    initial={{ opacity: 0, y: 200 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.3, duration: 1 }} className="flex justify-center items-center flex-col md:flex-row mx-auto w-10/12 gap-10 pt-4 ">
       <div className="flex overflow-hidden relative flex-col justify-center items-start p-10 md:p-20 text-base text-white rounded-2xl max-w-full md:max-w-[685px] min-h-[394px] max-md:px-5">
         <img
           src="/assets/slider-img/slider-2.jpg"
-          className="object-cover absolute inset-0 w-full h-full"
+          className="object-cover absolute inset-0 w-full h-full "
           alt="Looking for a car"
         />
         <div className="relative mt-3 text-2xl md:text-3xl font-bold leading-8 md:leading-10">
@@ -56,7 +60,7 @@ function SellingCar() {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

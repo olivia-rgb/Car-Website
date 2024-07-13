@@ -1,55 +1,119 @@
 import React from 'react';
-import "../../styles/browse.css"
+import { FiArrowUpRight } from "react-icons/fi";
+import { TbCarSuv } from "react-icons/tb";
+import { FaCarAlt } from "react-icons/fa";
+import { FaCarSide } from "react-icons/fa";
+import { FaCaravan } from "react-icons/fa6"; 
+import { FaCarOn } from "react-icons/fa6";
+import { RiPoliceCarLine } from "react-icons/ri";
+import { FaCartFlatbedSuitcase } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const BrowseCar = () => {
   return (
-    <div className="container">
-      <div className="image-container">
-        <div className="overlay">
-          <span className='p-3 text-center font-extrabold'>Explore Our Premium Brand</span>
-        </div>
-      </div>
-      <div className="text-container">
-        <div className="flex gap-5 justify-between items-start px-5 pt-11 text-lg font-medium leading-5 text-center text-slate-950 max-md:flex-wrap ">
-          <div className="brand">
-            <img src="/assets/brand-img/brand1.jpg.png" alt="Audi" />
-            <div>Audi</div>
-          </div>
-          <div className="brand">
-            <img src="/assets/brand-img/brand2.jpg.png" alt="BMW" />
-            <div>BMW</div>
-          </div>
-          <div className="brand">
-            <img src="/assets/brand-img/brand3.jpg.png" alt="Ford" />
-            <div>Ford</div>
-          </div>
-          <div className="brand">
-            <img src="/assets/brand-img/brand5.jpg.png" alt="Peugeot" />
-            <div>Peugeot</div>
-          </div>
-          <div className="brand">
-            <img src="/assets/brand-img/brand6.jpg.png" alt="Volkswagen" />
-            <div>Volkswagen</div>
-          </div>
-          <div className="brand">
-            <img src="/assets/brand-img/brand7.jpg.png" alt="Bentley" />
-            <div>Bentley</div>
-          </div>
-          <div className="brand">
-            <img src="/assets/brand-img/brand8.jpg.png" alt="Nissan" />
-            <div>Nissan</div>
-          </div>
-          <div className="brand">
-            <img src="/assets/brand-img/brand9.jpg.png" alt="Jeep" />
-            <div>Jeep</div>
-          </div>
-          <div className="brand">
-            <img src="/assets/brand-img/brand10.jpg.png" alt="Skoda" />
-            <div>Skoda</div>
+    <motion.div
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.3, duration: 1 }}
+      className="mt-10"
+    >
+      <div className='w-10/12 mx-auto'>
+
+        <div className="flex flex-col items-center pb-6 bg-white leading-[100%] text-[#000d6b] max-md:px-5">
+          <div className="flex gap-5 mt-2.5 w-full max-w-[1400px] max-md:flex-wrap max-md:max-w-full">
+            <div className="flex-auto text-4xl font-bold">Browse by Type</div>
+            <div className="flex gap-3 my-auto text-base font-medium text-center">
+              <div>View All</div>
+              <FiArrowUpRight className='text-[#f9a826] font-bold'/>
+            </div>
           </div>
         </div>
+
+        <div className="flex gap-5 text-lg font-medium leading-5 text-center whitespace-nowrap text-slate-950 max-md:flex-wrap">
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 1 }}
+            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+          >
+            <TbCarSuv className='car-icon'/>
+            <div className="mt-3">SUV</div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 1 }}
+            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+          >
+            <FaCarAlt className='car-icon' />
+            <div className="mt-3">Sedan</div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 1 }}
+            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+          >
+            <FaCarSide className='car-icon'/>
+            <div className="mt-3">Hatchback</div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 1 }}
+            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+          >
+            <FaCaravan className='car-icon'/>
+            <div className="mt-3">Coupe</div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 1 }}
+            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+          >
+            <FaCarSide className='car-icon'/>
+            <div className="mt-3">Hybrid</div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 1 }}
+            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+          >
+            <FaCarOn className='car-icon'/>
+            <div className="mt-3">Convertible</div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9, duration: 1 }}
+            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+          >
+            <FaCaravan className='car-icon'/>
+            <div className="mt-3">Van</div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.0, duration: 1 }}
+            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+          >
+            <RiPoliceCarLine className='car-icon'/>
+            <div className="mt-3">Electric</div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.1, duration: 1 }}
+            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+          >
+            <FaCartFlatbedSuitcase className='car-icon'/>
+            <div className="mt-3">Truck</div>
+          </motion.div>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

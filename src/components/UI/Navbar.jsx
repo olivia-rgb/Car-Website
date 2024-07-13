@@ -1,58 +1,67 @@
-import React from 'react'
-import "../../styles/navbar.css"
-
+import React, { useState } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaCar, FaCarSide, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; 
 
 function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
-    <div className=''>
-      <div className='bg-[#000d6b] '>
-      <div className=" navbar1">
+    <div className="font-bold text-[#000d6b] text-2xl md:text-xl ">
+      {/* Logo (Centered on Desktop) */}
+      <div className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+      <div className="hidden md:flex justify-between items-center w-10/12 mx-auto">
         <div className="flex gap-8">
-          <div>Home </div>
-          <div>Blog </div>
-          <div>Pages </div>
-          <div>About</div>
-          <div>Contact</div>
-      </div>
-      <div>
-          <img src="/assets/nav-img/logo.svg.png" alt="logo" />
+            <Link to="/" className=" hover:underline hover:text-[#f9a826]">Home</Link>
+            <Link to="/about" className="hover:underline hover:text-[#f9a826]">About</Link>
+            <Link to="/contact" className="hover:underline hover:text-[#f9a826]">Contact</Link>
         </div>
-      <div className="flex gap-5 justify-between self-stretch">
-        <div className="flex gap-2.5 my-auto">
-          <div>Sign in</div>
-        </div>
-        <div className="justify-center px-7 py-3 text-center border border-white border-solid rounded-[46px] max-md:px-5">
-          Submit Listing
+        <img src="/assets/nav-img/logo3.png" alt="logo" className="w-20 mx-auto mt-4" />
+        <div className="flex gap-8">
+        <button className="bg-[#f9a826] rounded-md border border-blue-500 text-[#000d6b] px-4 py-1 ">
+              Buy Car
+            </button>
+            <button className="bg-[#f9a826] rounded-md border border-blue-500 text-[#000d6b] px-4 py-1">
+              Sell Car
+            </button>
         </div>
       </div>
-     </div>
-      </div>
-    
-      <div className="bg-white">
-        <div className="navbar2 w-10/12 flex justify-between">
-          <div>Buy a Car</div>
-          <div>Rent a Car</div>
-          <div>Sell Car</div>
-          <div>Hire a Mechanic</div>
-        </div>
       </div>
 
+      {/* Hamburger Menu (Mobile View) */}
+      <div className=" fixed top-0 left-0 w-full bg-white shadow-md z-40 py-2">
+      <div className="md:hidden flex flex-wrap justify-between items-center px-4 py-2">
+        <img src="/assets/nav-img/logo3.png" alt="logo" className="w-12" />
+        <button onClick={toggleMenu} className="text-4xl">
+          {showMenu ? <FaTimes /> : <GiHamburgerMenu />}
+        </button>
+      </div>
+      </div>
 
-
-        <div className='bg-[#000d6b]'>
-         <div className="navbar3">
-           <div className=" flex gap-8">
-               <div>Used Cars</div>
-               <div>Any Model</div>
-               <div>Prices</div>
-           </div>
-           <div >All Price</div>
-           <div className=" items-start px-20 py-2 font-medium text-center whitespace-nowrap bg-white leading-[185%] rounded-md text-slate-950 max-md:px-5">
-               <div>Search</div>
-             </div>
-         </div>
+      {/* Mobile Menu Overlay */}
+      {showMenu && (
+        <div className="md:hidden fixed inset-0 top-10 h-[50vh] bg-[#000d6b] text-white font-bold flex flex-col justify-center items-center z-20 overflow-auto">
+          <div className="w-full p-4">
+            <div className="text-center p-2">Home</div>
+            <div className="text-center p-2">About</div>
+            <div className="text-center p-2">Contact</div>
+            <div className="text-center p-2">
+              <FaCar className="inline-block text-[#f9a826] mr-1" />
+              Buy Car
+            </div>
+            <div className="text-center p-2">
+              <FaCarSide className="inline-block text-[#f9a826] mr-1" />
+              Sell Car
+            </div>
+          </div>
         </div>
-         </div>
-       );
-     }
-export default Navbar
+      )}
+    </div>
+  );
+}
+
+export default Navbar;

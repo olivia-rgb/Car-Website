@@ -1,4 +1,5 @@
 import React from 'react'
+import { FiArrowUpRight } from "react-icons/fi";
 
 function AllVehicles() {
   return (
@@ -7,13 +8,9 @@ function AllVehicles() {
         <div className="flex flex-col items-center  pt-15 pb-6 bg-white leading-[100%] text-[#000db6] max-md:px-5">
       <div className="flex gap-5 mt-10 w-full max-w-[1400px] max-md:flex-wrap max-md:max-w-full">
         <div className="flex-auto text-4xl font-bold">Explore All Vehicles</div>
-        <div className="flex gap-3 my-auto text-base font-medium text-center">
+        <div className="flex gap-3 items-center my-auto text-base font-medium text-center">
           <div>View All</div>
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b84a29f6731a06985362308e49cab3a845cf5d3b4929c759d8c41432c094faab?apiKey=f417b8c00fe14582a1a201b8017683ae&"
-            className="shrink-0 w-3.5 aspect-square"
-          />
+          <FiArrowUpRight className='text-[#f9a826] font-bold'/>
         </div>
       </div>
     </div> 
@@ -24,7 +21,7 @@ function AllVehicles() {
         <div className="shrink-0 mt-5 h-0.5 bg-[#f9a826]" />
       </div>
       <div className="flex-auto">Featured Cars</div>
-      <div className="flex-auto max-md:max-w-full">Popular Cars</div>
+      <div className="flex-auto ">Popular Cars</div>
     </div>
         </div>
 
@@ -33,7 +30,7 @@ function AllVehicles() {
 
     <div className="flex flex-col justify-center bg-white rounded-2xl max-w-[343px]">
       <div className="flex overflow-hidden relative flex-col gap-5 justify-between items-start px-5 pt-5 pb-20 w-full text-sm font-medium leading-6 text-white capitalize aspect-[1.5]">
-        <img src="/assets/vehicle-img/car2.png" alt="" />
+        <img src="/assets/vehicle-img/car3.png" alt="" />
         <div className="relative justify-center px-4 py-2.5 bg-[#f9a826] rounded-[30px]">
           Great Price
         </div>

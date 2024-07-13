@@ -1,11 +1,13 @@
-import Home  from "./pages/Home";
-import './index.css'
 
+
+import React from 'react';
+import Routers from './Router/Routers'
+import './index.css'; // Import your CSS file here
 
 const App = () => {
   return (
     <div>
-       <Home />
+        <Routers />
     </div>
   );
 };

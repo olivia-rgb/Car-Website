@@ -6,4 +6,26 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
+.roboto-light {
+    
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .car-type-item {
+    @apply flex flex-col items-center justify-center flex-1 px-6 py-4 bg-white rounded-2xl border border-gray-200 border-solid max-md:px-5;
+  }
+  
+  .car-icon {
+    @apply text-[#f9a826] text-4xl;
+  }
+  .brand-item {
+    @apply flex flex-col items-center;
+  }
+  
+  .brand-img {
+    @apply aspect-square w-[70px];
+  }
+    
