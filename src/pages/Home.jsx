@@ -13,7 +13,7 @@ import Footer from "../components/Footer"
 
 function Home() {
   return (
-    <div className='min-h-screen flex flex-col justify-centeritems-center'>
+    <div className='min-h-screen flex flex-col justify-center items-center'>
     <Header />
     <BrowseCar />
     <PremiumBrands />

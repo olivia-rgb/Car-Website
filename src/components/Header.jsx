@@ -47,7 +47,7 @@ const Header = () => {
       ></video>
 
        {/* Overlay to darken the video */}
-       <div className=" bg-[#000d6b] w-[98.7vw] max-[450px]:h-[90vh] h-[93vh] mt-[-1rem] absolute opacity-35 z-[-1]"></div>
+       <div className=" w-[98.7vw] max-[450px]:h-[90vh] h-[93vh] mt-[-1rem] absolute opacity-35 z-[-1]"></div>
 
 
       {/* Navbar and Hero components */}

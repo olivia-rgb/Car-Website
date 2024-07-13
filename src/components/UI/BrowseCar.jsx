@@ -102,15 +102,7 @@ const BrowseCar = () => {
             <RiPoliceCarLine className='car-icon'/>
             <div className="mt-3">Electric</div>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 200 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.1, duration: 1 }}
-            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
-          >
-            <FaCartFlatbedSuitcase className='car-icon'/>
-            <div className="mt-3">Truck</div>
-          </motion.div>
+          
         </div>
       </div>
     </motion.div>

@@ -105,15 +105,7 @@ const PremiumBrands = () => {
             <img src='/assets/brand-img/brand9.jpg.png' className="brand-img" alt="Jeep"/>
             <div className="mt-3.5">Jeep</div>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 200 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 1 }}
-            className="brand-item"
-          >
-            <img src='/assets/brand-img/brand10.jpg.png' className="brand-img" alt="Skoda"/>
-            <div className="mt-3.5">Skoda</div>
-          </motion.div>
+          
         </div>
       </div>
     </motion.div>
