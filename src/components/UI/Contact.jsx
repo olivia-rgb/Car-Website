@@ -15,13 +15,13 @@ function Contact() {
                 <br />
                 hesitate to reach us
               </div>
-              <div className="mt-10 leading-7 max-md:mt-10 max-md:max-w-full">
+              <div className=" leading-7 max-md:mt-10 max-md:max-w-full">
                 123 Queensberry Street, North
                 <br />
                 Melbourne VIC3051, Australia.
               </div>
               <div className="flex gap-5 mt-7 text-center max-md:flex-wrap">
-                <div className="flex flex-1  gap-3.5 justify-center px-9 py-3 bg-white border border-solid border-slate-950 rounded-[44px] max-md:px-5">
+                <div className="flex flex-1 justify-center px-9 py-3 bg-white border border-solid border-slate-950 rounded-[44px] max-md:px-5">
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a2ccf3c9ea329c6bb25d919c2d806173739745bfe8d4f04c6d30822695c59ae?apiKey=f417b8c00fe14582a1a201b8017683ae&"

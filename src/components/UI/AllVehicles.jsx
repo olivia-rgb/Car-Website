@@ -4,6 +4,7 @@ import { LuClock } from "react-icons/lu";
 import { BsFillFuelPumpDieselFill } from "react-icons/bs";
 import { TbAutomaticGearbox } from "react-icons/tb";
 import { FaRegCalendarAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const vehicles = [
   {
@@ -86,7 +87,7 @@ const vehicles = [
 
 const BestDeals = () => {
   return (
-    <div className=" py-8 sm:py-12 sm:px-10  md:py-16  bg-white">
+    <div className="w-full md:w-10/12 mx-auto py-8 sm:py-12 sm:px-10 md:py-16 bg-white">
       <div className="flex flex-col items-center justify-center space-y-3 text-center mb-6">
         <h1 className="text-[#000d6b] font-bold text-2xl sm:text-3xl md:text-5xl">Best Deals</h1>
         <p className="text-black text-sm sm:text-base md:text-lg">
@@ -95,8 +96,11 @@ const BestDeals = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {vehicles.map((vehicle, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ opacity: 0, y: 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 * (index + 1), duration: 1 }}
             className="border border-gray-200 shadow-md p-3 flex flex-col justify-between"
           >
             <div className="flex items-center justify-between mb-3">
@@ -132,7 +136,7 @@ const BestDeals = () => {
               ))}
             </div>
             <div className="text-[#f9a826] text-lg font-bold">{vehicle.price}</div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
