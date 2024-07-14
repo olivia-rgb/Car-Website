@@ -1,11 +1,38 @@
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+
+const phrases = [
+  'Find Your Dream Car',
+  'Sell Your Car',
+  'Hire a Mechanic',
+  'Tow Your Vehicles',
+  'Car Rentals',
+  'Need a Service Station'
+];
 
 const Hero = () => {
+  const [currentPhrase, setCurrentPhrase] = React.useState(0);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentPhrase(prev => (prev + 1) % phrases.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className='flex flex-col justify-center items-center h-full'>
       <div className="text-6xl font-bold text-center mb-5 text-white leading-[70px] max-w-[706px] max-md:text-4xl">
-        Find Your Dream Car
+        <motion.span
+          key={currentPhrase}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.5 }}
+        >
+          {phrases[currentPhrase]}
+        </motion.span>
       </div>
 
       {/* Desktop View */}

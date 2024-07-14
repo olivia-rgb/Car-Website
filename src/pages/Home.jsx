@@ -9,12 +9,13 @@ import AllVehicles from "../components/UI/AllVehicles";
 import WhyUs from "../components/UI/WhyUs";
 import Review from "../components/UI/Review";
 import Footer from "../components/Footer";
+import Contact from "../components/UI/Contact"
 
 function Home() {
   return (
     <div className='min-h-screen flex flex-col items-center justify-center overflow-x-hidden'>
       <Header />
-      <div className='w-full max-w-7xl px-4'>
+      <div className='w-full  '>
         <BrowseCar />
         <PremiumBrands />
         <FeaturedVehicle />
@@ -23,6 +24,7 @@ function Home() {
         <AllVehicles />
         <WhyUs />
         <Review />
+        <Contact />
       </div>
       <Footer />
     </div>
