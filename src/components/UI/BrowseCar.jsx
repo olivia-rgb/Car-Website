@@ -21,7 +21,7 @@ const BrowseCar = () => {
 
         <div className="flex flex-col items-center pb-6 bg-white leading-[100%] text-[#000d6b] max-md:px-5">
           <div className="flex gap-5 mt-2.5 w-full max-w-[1400px] max-md:flex-wrap max-md:max-w-full">
-            <div className="flex-auto text-4xl font-bold">Browse by Type</div>
+            <div className="flex-auto text-3xl md:text-4xl font-bold">Browse by Type</div>
             <div className="flex gap-3 my-auto text-base font-medium text-center">
               <div>View All</div>
               <FiArrowUpRight className='text-[#f9a826] font-bold'/>

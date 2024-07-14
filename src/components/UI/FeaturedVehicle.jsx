@@ -12,7 +12,7 @@ function FeaturedVehicle() {
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
-      className='mt-10 py-20 flex flex-col items-center md:hidden w-full'>
+      className=' flex flex-col items-center md:hidden w-full'>
       <div className="text-3xl font-bold leading-8 max-w-full text-[#000d6b] text-center w-10/12">
         Get A Fair Price For Your Car <br/> Sell To Us Today
       </div>

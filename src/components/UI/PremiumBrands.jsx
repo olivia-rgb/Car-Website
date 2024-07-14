@@ -13,7 +13,7 @@ const PremiumBrands = () => {
       <div className='w-10/12 mx-auto'>
         <div className="flex flex-col items-center pt-20 pb-6 bg-white leading-[100%] text-[#000d6b] max-md:px-5">
           <div className="flex gap-5 mt-6 w-full max-w-[1400px] max-md:flex-wrap max-md:max-w-full">
-            <div className="flex-auto text-4xl font-bold max-md:max-w-full">
+            <div className="flex-auto text-3xl md:text-4xl font-bold max-md:max-w-full">
               Explore Our Premium Brands
             </div>
             <div className="flex gap-2.5 my-auto text-base font-medium text-center">
