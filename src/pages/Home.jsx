@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <div className='min-h-screen flex flex-col items-center'>
+    <div className='min-h-screen flex flex-col items-center justify-center'>
       <Header />
       <div className='w-full max-w-7xl px-4'>
         <BrowseCar />
