@@ -39,7 +39,7 @@ const FiguresSection = () => {
 
   return (
     <div
-      className="relative my-5 xl:gap-16 sm:py-16 xl:px-16 bg-cover bg-center"
+      className="relative my-10 xl:gap-16 sm:py-16 xl:px-16 bg-cover bg-center"
       style={{ backgroundImage: "url('/assets/bg-img/bgcar11.jpeg')" }} // Adjust the path as needed
     >
       <div className="px-8 grid grid-cols-2 gap-4 md:grid-cols-4 relative z-10">
@@ -55,15 +55,14 @@ const FiguresSection = () => {
               visible: { opacity: 1, y: 0, transition: { duration: 1 } },
             }}
           >
-            <h2 className="text-white text-4xl font-bold flex flex-row pb-8">
-              {/* The Suspense fallback provides a loading indicator */}
-              <Suspense fallback={<div>Loading...</div>}>
+            <h2 className="text-white text-2xl md:text-4xl font-bold flex flex-row pb-4 md:pb-8">
+              <Suspense fallback={<div style={{ height: '2rem', width: '2rem' }} />} >
                 {inView && (
                   <AnimatedNumbers
                     includeComma
                     animateToNumber={parseInt(figure.value)}
                     locale="en-US"
-                    className="text-white text-4xl font-bold"
+                    className="text-white text-2xl md:text-4xl font-bold"
                     configs={(_, index) => ({
                       mass: 1,
                       friction: 80,
@@ -74,7 +73,7 @@ const FiguresSection = () => {
               </Suspense>
               <span className="text-white">M</span>
             </h2>
-            <p className="text-white text-xl pt-8 border-t font-bold">
+            <p className="text-white text-sm md:text-xl pt-8 border-t font-bold">
               {figure.metric}
             </p>
           </motion.div>
