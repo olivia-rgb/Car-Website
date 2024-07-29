@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import mybg from "../video/mybg.mp4";
+import mybg from "../video/mybggg.mp4";
 import { motion } from "framer-motion";
 import Navbar from "./UI/Navbar"
 import Hero from "./UI/Hero";
@@ -47,7 +47,7 @@ const Header = () => {
       ></video>
 
        {/* Overlay to darken the video */}
-       <div className=" w-[98.7vw] max-[450px]:h-[90vh] h-[93vh] mt-[-1rem] absolute opacity-35 z-[-1]"></div>
+       <div className=" bg-[#000d6b] w-[98.7vw] max-[450px]:h-[90vh] h-[93vh] mt-[-1rem] absolute opacity-30 z-[-1]"></div>
 
 
       {/* Navbar and Hero components */}

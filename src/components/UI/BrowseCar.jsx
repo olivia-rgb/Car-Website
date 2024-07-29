@@ -34,7 +34,7 @@ const BrowseCar = () => {
             initial={{ opacity: 0, y: 200 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 1 }}
-            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+            className="flex gap-2 items-center py-2 px-4 border border-[#000d6b] hover:shadow-md car-type-item"
           >
             <TbCarSuv className='car-icon'/>
             <div className="mt-3">SUV</div>
@@ -43,7 +43,7 @@ const BrowseCar = () => {
             initial={{ opacity: 0, y: 200 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 1 }}
-            className="flex gap-2 items-center py-2 px-4 border border-gray-300 hover:shadow-md car-type-item"
+            className="flex gap-2 items-center py-2 px-4 border border-[#000d6b] hover:shadow-md car-type-item"
           >
             <FaCarAlt className='car-icon' />
             <div className="mt-3">Sedan</div>

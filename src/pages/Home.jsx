@@ -2,14 +2,18 @@ import React from 'react';
 import Header from "../components/Header";
 import BrowseCar from "../components/UI/BrowseCar"; 
 import PremiumBrands from "../components/UI/PremiumBrands";
-import FeaturedVehicle from '../components/UI/FeaturedVehicle';
 import Figures from "../components/UI/Figures";
-import SellingCar from "../components/UI/SellingCar";
-import AllVehicles from "../components/UI/AllVehicles";
 import WhyUs from "../components/UI/WhyUs";
 import Review from "../components/UI/Review";
 import Footer from "../components/Footer";
+import SellCar from "../components/UI/SellCar";
 import Contact from "../components/UI/Contact"
+import AllVehicle from '../components/AllVehicle';
+import Bike from "../components/Bike"
+import Trucks from '../components/Trucks';
+import Heavy from '../components/Heavy';
+import VehicleParts from '../components/VehicleParts';
+import Buses from '../components/Buses';
 
 function Home() {
   return (
@@ -18,15 +22,20 @@ function Home() {
       <div className='w-full  '>
         <BrowseCar />
         <PremiumBrands />
-        <FeaturedVehicle />
+        <SellCar />
         <Figures />
-        <SellingCar />
-        <AllVehicles />
+        <AllVehicle />
+        <Buses />
+        <Bike />
+        <Trucks />
+        <Heavy />
+        <VehicleParts />
         <WhyUs />
         <Review />
         <Contact />
+        <Footer />
       </div>
-      <Footer />
+      
     </div>
   );
 }

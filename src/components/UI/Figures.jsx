@@ -1,36 +1,87 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
-function Figures() {
+// Dynamically import the AnimatedNumbers component
+const AnimatedNumbers = lazy(() => import("react-animated-numbers"));
+
+const figuresList = [
+  {
+    metric: "CARS FOR SALE",
+    value: "836",
+  },
+  {
+    metric: "DEALER REVIEWS",
+    value: "738",
+  },
+  {
+    metric: "VISITORS PER DAY",
+    value: "100",
+  },
+  {
+    metric: "VERIFIED DEALERS",
+    value: "238",
+  },
+];
+
+const FiguresSection = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [inView, controls]);
+
   return (
-    <div className="flex justify-center items-center py-10 w-10/12 mx-auto text-[#000d6b]">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 justify-between max-w-full w-[1190px]">
-        <div className="flex flex-col items-center">
-          <div className="text-4xl font-extrabold leading-[53.2px]">836M</div>
-          <div className="mt-1 text-[#f9a826] font-bold text-base leading-9 text-center">
-            CARS FOR SALE
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-4xl font-bold leading-[53.2px]">738M</div>
-          <div className="mt-1 text-[#f9a826] font-bold text-base leading-9 text-center">
-            DEALER REVIEWS
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-4xl font-bold leading-[53.2px]">100M</div>
-          <div className="mt-1 text-[#f9a826] font-bold text-base leading-9 text-center">
-            VISITORS PER DAY
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-4xl font-bold leading-[53.2px]">238M</div>
-          <div className="mt-1 text-[#f9a826] font-bold text-base leading-9 text-center">
-            VERIFIED DEALERS
-          </div>
-        </div>
+    <div
+      className="relative my-5 xl:gap-16 sm:py-16 xl:px-16 bg-cover bg-center"
+      style={{ backgroundImage: "url('../../../public/assets/bg-img/bgcar11.jpeg')" }} // Adjust the path as needed
+    >
+      <div className="px-8 grid grid-cols-2 gap-4 md:grid-cols-4 relative z-10">
+        {figuresList.map((figure, index) => (
+          <motion.div
+            key={index}
+            className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0 w-full sm:w-auto"
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+            }}
+          >
+            <h2 className="text-white text-4xl font-bold flex flex-row pb-8">
+              {/* The Suspense fallback provides a loading indicator */}
+              <Suspense fallback={<div>Loading...</div>}>
+                {inView && (
+                  <AnimatedNumbers
+                    includeComma
+                    animateToNumber={parseInt(figure.value)}
+                    locale="en-US"
+                    className="text-white text-4xl font-bold"
+                    configs={(_, index) => ({
+                      mass: 1,
+                      friction: 80,
+                      tensions: 140 * (index + 1),
+                    })}
+                  />
+                )}
+              </Suspense>
+              <span className="text-white">M</span>
+            </h2>
+            <p className="text-white text-xl pt-8 border-t font-bold">
+              {figure.metric}
+            </p>
+          </motion.div>
+        ))}
       </div>
     </div>
   );
-}
+};
 
-export default Figures;
+export default FiguresSection;
