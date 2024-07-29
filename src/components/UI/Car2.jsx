@@ -96,7 +96,7 @@ const vehicles = [
   },
 ];
 
-const Car = () => {
+const Car2 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerPage = window.innerWidth < 768 ? 2 : 4;
 
@@ -123,7 +123,7 @@ const Car = () => {
       className="relative w-full   sm:px-10  bg-white"
     >
       <div className="relative overflow-hidden">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className= {`grid ${window.innerWidth < 768 ? 'grid-cols-2' : 'grid-cols-4'} gap-2`}>
           <AnimatePresence initial={false}>
             {currentVehicles.map((vehicle, index) => (
               <motion.div
@@ -195,4 +195,4 @@ const Car = () => {
   );
 };
 
-export default Car;
+export default Car2;
