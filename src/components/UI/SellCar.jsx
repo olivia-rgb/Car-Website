@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const SellCar = () => {
   return (
-    <div className='relative flex flex-col md:flex-row w-full md:w-10/12 pt-10 mx-auto gap-5 md:gap-24 mt-9 bg-[url(/path/to/your/background-image.jpg)] bg-cover bg-center'>
+    <div className='relative flex flex-col md:flex-row w-full md:w-10/12 pt-5 mx-auto gap-5 md:gap-24 mt-5 bg-[url(/path/to/your/background-image.jpg)] bg-cover bg-center'>
       <motion.div
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -13,19 +13,19 @@ const SellCar = () => {
         className='flex flex-col items-center md:hidden w-full'
       >
         <div className="text-3xl font-bold leading-8 max-w-full text-[#000d6b] text-center w-10/12">
-          Get A Fair Price For Your Car <br /> Sell To Us Today
+          For a Great Price on Your Car <br /> Sell To Us Today
         </div>
         <div className='w-full flex justify-center mt-4'>
           <img src="/assets/slider-img/buy.jpg" alt="Vehicle 1" className='w-10/12' />
         </div>
         <div className="text-lg pt-3 leading-6 max-w-full text-slate-950 mt-2 text-center w-10/12">
-          We are committed to providing our customers with exceptional service, competitive pricing, and a wide range of.
+          We are committed to providing our customers with an exceptional service.
         </div>
         <div className="flex flex-col max-w-full text-[#000d6b] mt-4 w-10/12">
-          <div className="flex gap-2.5 items-center self-stretch px-2.5 flex-wrap w-full">
+          <div className="flex gap-2.5justify-center items-center self-stretch px-2.5 flex-wrap w-full">
             <CiLocationArrow1 className='text-[#f9a826]' />
             <div className="flex-auto my-auto text-sm font-medium leading-6 max-w-full">
-              We are the UK’s largest provider, with more patrols in more places
+              We are the Nigeria's largest provider
             </div>
           </div>
           <div className="flex items-center gap-2.5 px-2.5 mt-2 w-full">
@@ -77,8 +77,8 @@ const SellCar = () => {
         </div>
 
         <div className='w-full md:w-1/2 order-1 md:order-2'>
-          <div className="text-2xl md:text-4xl font-bold leading-8 md:leading-[56px] max-w-full md:max-w-[460px] text-[#000d6b] text-center md:text-left">
-            Get A Fair Price For Your<br />Car Sell To Us Today
+          <div className="text-2xl md:text-[2.2rem] font-bold  max-w-full md:max-w-[460px] text-[#000d6b] text-center md:text-left">
+            For a Great Price on Your Car<br /> Sell To Us Today
           </div>
           <div className="text-sm md:text-base leading-6 md:leading-7 max-w-full md:max-w-[493px] text-slate-950 mt-2 md:mt-4 text-center md:text-left">
             We are committed to providing our customers with exceptional service, competitive pricing, and a wide range of.

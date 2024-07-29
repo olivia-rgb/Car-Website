@@ -40,7 +40,7 @@ const FiguresSection = () => {
   return (
     <div
       className="relative my-5 xl:gap-16 sm:py-16 xl:px-16 bg-cover bg-center"
-      style={{ backgroundImage: "url('../../../public/assets/bg-img/bgcar11.jpeg')" }} // Adjust the path as needed
+      style={{ backgroundImage: "url('/assets/bg-img/bgcar11.jpeg')" }} // Adjust the path as needed
     >
       <div className="px-8 grid grid-cols-2 gap-4 md:grid-cols-4 relative z-10">
         {figuresList.map((figure, index) => (
