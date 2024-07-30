@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { LuClock } from 'react-icons/lu';
@@ -96,8 +96,11 @@ const vehicles = [
   },
 ];
 
-const Car = () => {
+const Bike = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  // Use a constant for itemsPerPage based on the window width
   const itemsPerPage = window.innerWidth < 768 ? 2 : 4;
 
   const handleNext = () => {
@@ -114,11 +117,31 @@ const Car = () => {
     .slice(currentIndex, currentIndex + itemsPerPage)
     .concat(vehicles.slice(0, Math.max(0, currentIndex + itemsPerPage - vehicles.length)));
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.getElementById('bike-carousel');
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        // Check if any part of the element is within the viewport
+        const inView = rect.top < window.innerHeight && rect.bottom > 0;
+        setIsVisible(inView);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check visibility on mount
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
-    <div className="relative w-full sm:px-10 ">
+    <div id="bike-carousel"className="relative w-full sm:px-10 ">
       <motion.div
       initial={{ opacity: 0, x: 200 }}  // Component starts from right
-      whileInView={{ opacity: 1, x: 0 }}
+      whileInView={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 200 }}
       transition={{ duration: 1.0, type: 'tween' }}  // Duration
       className="relative w-full   sm:px-10  bg-white"
     >
@@ -129,7 +152,7 @@ const Car = () => {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, x: 200 }}  // Start from right
-                whileInView={{ opacity: 1, x: 0 }}   // Move to center
+                animate={{ opacity: 1, x: 0 }}   // Move to center
                 exit={{ opacity: 0, x: -200 }}    // Exit to left
                 transition={{ duration: 1.0, type: 'tween' }}  // Increased duration
                 className="border border-gray-200 shadow-md px-3 flex flex-col justify-between"
@@ -171,4 +194,4 @@ const Car = () => {
   );
 };
 
-export default Car;
+export default Bike;

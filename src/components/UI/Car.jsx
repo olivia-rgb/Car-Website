@@ -239,7 +239,7 @@ const Car = () => {
         <FaAnglesLeft />
       </motion.button>
       <motion.button
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 p-3 rounded-full bg-[#000d6b[#f9a826]             text-[#f9a826] text-2xl md:text-4xl shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#f9a826] transition-transform 
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 p-3 rounded-full bg-[#000d6b]             text-[#f9a826] text-2xl md:text-4xl shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#f9a826] transition-transform 
                     ease-in-out hover:scale-105"
         animate={{ x: [0, -30, 0], transition: { duration: 3, ease: "linear", repeat: Infinity } }}
         onClick={handleNext}

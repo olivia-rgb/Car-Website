@@ -39,13 +39,13 @@ function AllVehicle() {
       <div className="relative z-10">
         <Truck />
         <Truck2 />
-        <div className="flex mx-auto justify-center items-center gap-8 py-10">
-          <div className="flex items-center gap-3 px-20 py-5 font-medium text-center text-[#000d6b] bg-[#f9a826] border border-blue-600 border-solid leading-[185%] rounded-[60px]">
-            <FaSearch className='text-[#000d6b] text-xl' />
-            <div>Buy Trucks</div>
-          </div>
-          <div className="flex gap-3 px-20 py-5 font-medium text-center text-white bg-blue-600 border border-blue-600 border-solid leading-[185%] rounded-[60px]">
+        <div className="flex flex-col md:flex-row mx-auto justify-center items-center gap-8 py-10">
+          <div className="hidden md:flex items-center gap-3 px-8 py-2 md:px-12 py-4 font-bold text-center text-[#f9a826] bg-[#000d6b] border border-blue-600 border-solid leading-[185%] rounded-full shadow-lg hover:shadow-2xl transition-transform duration-300 ease-in-out hover:scale-105">
             <FaSearch className='text-[#f9a826] text-xl' />
+            <div>Buy Truck</div>
+          </div>
+          <div className=" flex items-center gap-3 px-8 py-2 md:px-12 py-4 font-bold text-center text-[#000d6b] bg-gradient-to-r from-[#f9a826] via-[#f79a1a] to-[#f9c05b] border border-blue-600 border-solid leading-[185%] rounded-full shadow-lg hover:shadow-2xl transition-transform duration-300 ease-in-out hover:scale-105">
+            <FaSearch className='text-[#000d6b] text-xl' />
             <div>See More</div>
           </div>
         </div>
