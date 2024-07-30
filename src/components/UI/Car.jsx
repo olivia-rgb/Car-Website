@@ -11,7 +11,7 @@ import { FaAnglesLeft } from "react-icons/fa6";
 const vehicles = [
   // (Add vehicle objects here)
   {
-    img: '/assets/vehicle-img/car9.jpeg',
+    img: '/assets/vehicle-img/car14.jpeg',
     name: 'Toyota Camry New',
     description: '3.5 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
@@ -23,7 +23,7 @@ const vehicles = [
     price: '$40,000',
   },
   {
-    img: '/assets/vehicle-img/car14.jpeg',
+    img: '/assets/vehicle-img/car17.jpeg',
     name: 'T-Cross – 2023',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
@@ -35,7 +35,7 @@ const vehicles = [
     price: '$15,000',
   },
   {
-    img:  '/assets/vehicle-img/car15.jpeg',
+    img:  '/assets/vehicle-img/car4.png',
     name: 'C-Class – 2023',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
@@ -47,7 +47,7 @@ const vehicles = [
     price: '$150,000',
   },
   {
-    img: '/assets/vehicle-img/car16.jpeg',
+    img: '/assets/vehicle-img/car5.png',
     name: 'Ford Transit – 2021',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
@@ -205,7 +205,7 @@ const Car = () => {
                   exit={{ opacity: 0, x: 200 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <img src={vehicle.img} alt={vehicle.name} className="w-full h-48 object-cover" />
+                  <img src={vehicle.img} alt={vehicle.name} className="w-full h-30 md:h-48 object-cover" />
                   <div className="p-4">
                     <h3 className="text-xl font-bold text-[#000d6b]">{vehicle.name}</h3>
                     <p className="text-gray-600 font-semibold">{vehicle.description}</p>
