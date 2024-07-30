@@ -23,8 +23,8 @@ const vehicles = [
     price: '$40,000',
   },
   {
-    img: '/assets/vehicle-img/car17.jpeg',
-    name: 'T-Cross – 2023',
+    img: '/assets/vehicle-img/car10.jpeg',
+    name: 'T-Cross – 2023  New',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '15 Miles' },
@@ -36,7 +36,7 @@ const vehicles = [
   },
   {
     img:  '/assets/vehicle-img/car4.png',
-    name: 'C-Class – 2023',
+    name: 'C-Class – 2023 New',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -48,7 +48,7 @@ const vehicles = [
   },
   {
     img: '/assets/vehicle-img/car5.png',
-    name: 'Ford Transit – 2021',
+    name: 'Ford Transit – 2021 New',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '2500 Miles' },
@@ -60,7 +60,7 @@ const vehicles = [
   },
   {
     img: '/assets/vehicle-img/car2.png',
-    name: 'New GLC – 2023',
+    name: 'New GLC – 2023 New',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -84,7 +84,7 @@ const vehicles = [
   },
   {
     img: '/assets/vehicle-img/car4.png',
-    name: 'C-Class – 2023',
+    name: 'C-Class – 2023 New',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -96,7 +96,7 @@ const vehicles = [
   },
   {
     img: '/assets/vehicle-img/car5.png',
-    name: 'C-Class – 2023',
+    name: 'C-Class – 2023 New',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -108,7 +108,7 @@ const vehicles = [
   },
   {
     img: '/assets/vehicle-img/car6.png',
-    name: 'C-Class – 2023',
+    name: 'C-Class – 2023 New',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -120,7 +120,7 @@ const vehicles = [
   },
   {
     img: '/assets/vehicle-img/car7.png',
-    name: 'C-Class – 2023',
+    name: 'C-Class – 2023 New',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -230,8 +230,8 @@ const Car = () => {
             </AnimatePresence>
           </div>
           <motion.button
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 p-3 rounded-full bg-gradient-to-r from-[#f9a826] via-[#1a3a80] to-[#000d6b]
-                   text-white text-2xl md:text-4xl shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#f9a826] transition-transform 
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 p-3 rounded-full bg-[#000d6b]
+                   text-[#f9a826] text-2xl md:text-4xl shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#f9a826] transition-transform 
                     ease-in-out hover:scale-105"
         animate={{ x: [0,30, 0], transition: { duration: 3, ease: "linear", repeat: Infinity } }}
         onClick={handlePrev}
@@ -239,8 +239,7 @@ const Car = () => {
         <FaAnglesLeft />
       </motion.button>
       <motion.button
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 p-3 rounded-full bg-gradient-to-r from-[#f9a826] via-[#1a3a80] to-[#000d6b]
-                   text-white text-2xl md:text-4xl shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#f9a826] transition-transform 
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 p-3 rounded-full bg-[#000d6b[#f9a826]             text-[#f9a826] text-2xl md:text-4xl shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#f9a826] transition-transform 
                     ease-in-out hover:scale-105"
         animate={{ x: [0, -30, 0], transition: { duration: 3, ease: "linear", repeat: Infinity } }}
         onClick={handleNext}
