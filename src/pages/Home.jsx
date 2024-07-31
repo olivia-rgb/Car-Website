@@ -14,6 +14,8 @@ import Trucks from '../components/Trucks';
 import Heavy from '../components/Heavy';
 import VehicleParts from '../components/VehicleParts';
 import Buses from '../components/Buses';
+import TowVehicle from '../components/TowVehicle';
+import Mechanic from '../components/Mechanic';
 
 function Home() {
   return (
@@ -30,6 +32,8 @@ function Home() {
         <Trucks />
         <Heavy />
         <VehicleParts />
+        <Mechanic />
+        <TowVehicle />
         <WhyUs />
         <Review />
         <Contact />
