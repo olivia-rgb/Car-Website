@@ -12,7 +12,7 @@ const vehicles = [
   // (Add vehicle objects here)
   {
     img: '/assets/heavy-img/heavy5.jpeg',
-    name: 'Toyota Camry New',
+    name: 'Excavator',
     description: '3.5 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '20 Miles' },
@@ -24,7 +24,7 @@ const vehicles = [
   },
   {
     img: '/assets/heavy-img/heavy8.jpeg',
-    name: 'T-Cross – 2023',
+    name: 'Bulldoer',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '15 Miles' },
@@ -36,7 +36,7 @@ const vehicles = [
   },
   {
     img: '/assets/heavy-img/heavy3.jpeg',
-    name: 'C-Class – 2023',
+    name: 'Grader',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -48,7 +48,7 @@ const vehicles = [
   },
   {
     img: '/assets/heavy-img/heavy4.jpeg',
-    name: 'Ford Transit – 2021',
+    name: 'Trencher',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '2500 Miles' },
@@ -60,7 +60,7 @@ const vehicles = [
   },
   {
     img: '/assets/heavy-img/heavy9.jpeg',
-    name: 'New GLC – 2023',
+    name: 'Dozer',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -72,7 +72,7 @@ const vehicles = [
   },
   {
     img: '/assets/heavy-img/heavy10.jpeg',
-    name: 'Toyota Camry New',
+    name: 'Dozer',
     description: '3.5 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '20 Miles' },
@@ -84,7 +84,7 @@ const vehicles = [
   },
   {
     img: '/assets/vehicle-img/car4.png',
-    name: 'C-Class – 2023',
+    name: 'Dozer',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },

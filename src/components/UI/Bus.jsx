@@ -12,7 +12,7 @@ const vehicles = [
   // (Add vehicle objects here)
   {
     img: '/assets/bus-img/bus4.jpeg',
-    name: 'Toyota Camry New',
+    name: 'City Bus',
     description: '3.5 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '20 Miles' },
@@ -24,7 +24,7 @@ const vehicles = [
   },
   {
     img: '/assets/bus-img/bus2.jpeg',
-    name: 'T-Cross – 2023',
+    name: 'Metro Bus',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '15 Miles' },
@@ -36,7 +36,7 @@ const vehicles = [
   },
   {
     img: '/assets/bus-img/bus3.jpeg',
-    name: 'C-Class – 2023',
+    name: 'Swift Bus',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -48,7 +48,7 @@ const vehicles = [
   },
   {
     img: '/assets/bus-img/bus12.jpeg',
-    name: 'Ford Transit – 2021',
+    name: 'Express Bus',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '2500 Miles' },
@@ -60,7 +60,7 @@ const vehicles = [
   },
   {
     img: '/assets/bus-img/bus7.jpeg',
-    name: 'New GLC – 2023',
+    name: 'Express Bus',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -72,7 +72,7 @@ const vehicles = [
   },
   {
     img: '/assets/bus-img/bus9.jpeg',
-    name: 'Toyota Camry New',
+    name: 'Star Bus',
     description: '3.5 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '20 Miles' },
@@ -84,7 +84,7 @@ const vehicles = [
   },
   {
     img: '/assets/bus-img/bus13.jpeg',
-    name: 'C-Class – 2023',
+    name: 'Urban Bus',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },

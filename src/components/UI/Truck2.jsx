@@ -12,7 +12,7 @@ const vehicles = [
   // (Add vehicle objects here)
   {
     img: '/assets/truck-img/truck10.jpeg',
-    name: 'Toyota Camry New',
+    name: 'MaxTrailer',
     description: '3.5 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '20 Miles' },
@@ -24,7 +24,7 @@ const vehicles = [
   },
   {
     img: '/assets/truck-img/truck1.jpeg',
-    name: 'T-Cross – 2023',
+    name: 'RoadKing',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '15 Miles' },
@@ -36,7 +36,7 @@ const vehicles = [
   },
   {
     img: '/assets/truck-img/truck15.jpeg',
-    name: 'C-Class – 2023',
+    name: 'MegaTrailer',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -48,7 +48,7 @@ const vehicles = [
   },
   {
     img: '/assets/truck-img/truck16.jpeg',
-    name: 'Ford Transit – 2021',
+    name: 'RoadTrailer',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '2500 Miles' },
@@ -60,7 +60,7 @@ const vehicles = [
   },
   {
     img: '/assets/truck-img/truck17.jpeg',
-    name: 'New GLC – 2023',
+    name: 'ProTrailer',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -72,7 +72,7 @@ const vehicles = [
   },
   {
     img: '/assets/truck-img/truck18.jpeg',
-    name: 'Toyota Camry New',
+    name: 'SwiftHaul',
     description: '3.5 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '20 Miles' },
@@ -84,7 +84,7 @@ const vehicles = [
   },
   {
     img: '/assets/truck-img/truck1.jpeg',
-    name: 'C-Class – 2023',
+    name: 'SwiftHaul',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },

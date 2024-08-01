@@ -12,7 +12,7 @@ const vehicles = [
   // (Add vehicle objects here)
   {
     img: '/assets/bike-img/bike1.jpeg',
-    name: 'Toyota Camry New',
+    name: 'Speedster-',
     description: '3.5 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '20 Miles' },
@@ -24,7 +24,7 @@ const vehicles = [
   },
   {
     img: '/assets/bike-img/bike2.jpeg',
-    name: 'T-Cross – 2023',
+    name: 'TurboBike-',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '15 Miles' },
@@ -36,7 +36,7 @@ const vehicles = [
   },
   {
     img: '/assets/bike-img/bike22.jpeg',
-    name: 'C-Class – 2023',
+    name: 'Tricycle-',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -48,7 +48,7 @@ const vehicles = [
   },
   {
     img: '/assets/bike-img/bike4.jpeg',
-    name: 'Ford Transit – 2021',
+    name: 'FlashRide',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '2500 Miles' },
@@ -60,7 +60,7 @@ const vehicles = [
   },
   {
     img: '/assets/bike-img/bike5.jpeg',
-    name: 'New GLC – 2023',
+    name: 'EcoBike-',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },
@@ -72,7 +72,7 @@ const vehicles = [
   },
   {
     img: '/assets/bike-img/bike6.jpeg',
-    name: 'Toyota Camry New',
+    name: 'ToEcoBike-',
     description: '3.5 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '20 Miles' },
@@ -84,7 +84,7 @@ const vehicles = [
   },
   {
     img: '/assets/bike-img/bike7.jpeg',
-    name: 'C-Class – 2023',
+    name: 'EcoBike-',
     description: '4.0 D5 PowerPulse Momentum 5dr AW… Geartronic Estate',
     details: [
       { icon: <LuClock className="w-4 h-4 text-[#f9a826]" />, label: '50 Miles' },

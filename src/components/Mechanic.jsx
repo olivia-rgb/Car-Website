@@ -27,7 +27,7 @@ function Mechanic() {
 
         {/* Content Div */}
         <div className="flex flex-col justify-center text-left  w-full md:w-1/2 p-6">
-          <h2 className="text-4xl text-[#000d6b] font-bold text-left mb-4">
+          <h2 className="text-3xl md:text-4xl text-[#000d6b] font-bold text-left mb-4">
             Need a Mechanic?<br/> We’re Here to Help!
           </h2>
           <p className="text-left mb-6">
@@ -36,7 +36,7 @@ function Mechanic() {
             Contact us today to get professional help <br/> and ensure your vehicle is in the best condition.
           </p>
           <div className="flex ">
-              <button className="bg-[#000d6b] text-[#f9a826] px-6 py-3 rounded-xl hover:bg-white transition flex items-center gap-2">
+              <button className="bg-[#000d6b] text-[#f9a826] px-6 py-3 mb-3 rounded-xl hover:bg-white transition flex items-center gap-2">
                 Hire a Mechanic <GiMechanicGarage />
               </button>
             
