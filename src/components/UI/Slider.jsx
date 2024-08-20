@@ -3,7 +3,7 @@ import { FaSearch, FaChevronDown } from 'react-icons/fa';
 
 const Slider = () => {
   const slides = [
-    { title: "Find Your Dream Car", paragraph: 'All our cars are inspected and verified by professionals ', image: '/assets/video/buycar.jpg', buttonText: 'Search Car' },
+    { title: "Find Your Dream Car", paragraph: 'All our cars are inspected and verified by professionals ', image: '/assets/video/dream2.jpg', buttonText: 'Search Car' },
     { title: 'Sell to Us Today', paragraph: 'All our cars are inspected and verified by professionals', image: '/assets/video/buycar2.jpg', buttonText: 'Sell Car' },
     { title: 'Rent a Car Today', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/rental2.mp4', buttonText: 'Rent a Car' },
     { title: 'Expert Mechanic Services', paragraph: 'All our cars are inspected and verified by professionals!', video: '/assets/video/mechanic.mp4', buttonText: 'Mechanic' },
@@ -64,7 +64,7 @@ const Slider = () => {
             )}
             
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center p-6">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-6">
               <div className="text-center flex flex-col justify-center items-center text-white max-w-5xl">
                 <h1 className="text-[clamp(1.5rem,5vw,3rem)] font-bold mb-4">{slide.title}</h1>
                 
