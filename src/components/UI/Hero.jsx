@@ -3,12 +3,10 @@ import { FaSearch } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const phrases = [
-  'Find Your Dream Car',
-  'Sell Your Car',
-  'Hire a Mechanic',
-  'Tow Your Vehicles',
-  'Car Rentals',
-  'Need a Service Station'
+  'Our cars are verified by professionals',
+  'Inspected by professionals',
+  'Affordable purchase',
+  '100% safe transaction',
 ];
 
 const Hero = () => {
@@ -45,14 +43,14 @@ const Hero = () => {
           <div>Any Models</div>
           <div className="shrink-0 my-auto w-2 border-solid border-t-[5px] border-t-slate-950 border-x-4 border-x-slate-950 h-[5px]" />
         </div>
-        <div className="flex items-center gap-3 px-14 py-5 font-medium text-center text-white bg-blue-600 border border-blue-600 border-solid leading-[185%] rounded-[60px]">
+        <div className="flex items-center gap-3 px-14 py-5 font-medium text-center text-white bg-[#000d6b] border border-blue-600 border-solid leading-[185%] rounded-[60px]">
           <FaSearch className='text-[#f9a826] text-xl'/>
           <div>Search Cars</div>
         </div>
       </div>
 
       {/* Mobile View */}
-      <div className="flex md:hidden items-center gap-3 px-10 py-5 font-medium text-center text-white bg-blue-600 border border-blue-600 border-solid leading-[185%] rounded-[60px]">
+      <div className="flex md:hidden items-center gap-3 px-10 py-5 font-medium text-center text-white bg-[#000d6b] border border-blue-600 border-solid leading-[185%] rounded-[60px]">
         <FaSearch className='text-[#f9a826] text-xl'/>
         <div>Search Cars</div>
       </div>

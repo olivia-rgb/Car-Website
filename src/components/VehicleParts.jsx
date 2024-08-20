@@ -2,8 +2,8 @@ import React from 'react';
 import Part from "./UI/Part";
 import Part2 from "./UI/Part2";
 import { FaSearch } from 'react-icons/fa';
-import backgroundImage from '../../public/assets/bg-img/bgcar7.jpeg';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -45,7 +45,7 @@ function AllVehicle() {
           </div>
           <div className=" flex items-center gap-3 px-8 py-2 md:px-12 py-4 font-bold text-center text-[#000d6b] bg-gradient-to-r from-[#f9a826] via-[#f79a1a] to-[#f9c05b] border border-blue-600 border-solid leading-[185%] rounded-full shadow-lg hover:shadow-2xl transition-transform duration-300 ease-in-out hover:scale-105">
             <FaSearch className='text-[#000d6b] text-xl' />
-            <div>See More</div>
+            <Link  to="/allparts">See More</Link>
           </div>
         </div>
       </div>

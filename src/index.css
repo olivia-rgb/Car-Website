@@ -13,6 +13,9 @@
     font-weight: 300;
     font-style: normal;
   }
+  img{
+    max-width: 100%;
+  }
 
   .car-type-item {
     @apply flex flex-col items-center justify-center flex-1 px-6 py-4 bg-white rounded-2xl border border-gray-200 border-solid max-md:px-5;

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import mybg from "../video/mybggg.mp4";
 import { motion } from "framer-motion";
 import Navbar from "./UI/Navbar"
-import Hero from "./UI/Hero";
+import Slider from "./UI/Slider";
 
 const Header = () => {
   const videoRef = useRef(null);
@@ -52,7 +52,7 @@ const Header = () => {
 
       {/* Navbar and Hero components */}
       <Navbar />
-      <Hero />
+      <Slider />
     </motion.div>
   );
 };
