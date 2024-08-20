@@ -3,10 +3,10 @@ import { FaSearch,FaChevronDown } from 'react-icons/fa'; // Import search icon f
 
 const Slider = () => {
   const slides = [
-    { title: "Let's Find Your Dream Car", paragraph: 'All our cars are inspected and verified by professionals ', video: '/src/video/buy.mov', buttonText: 'Search Car' },
+    { title: "Let's Find Your Dream Car", paragraph: 'All our cars are inspected and verified by professionals ', video: '/src/video/buycar.mp4', buttonText: 'Search Car' },
     { title: ' Sell to Us Today', paragraph: 'All our cars are inspected and verified by profAll our cars are inspected and verified by professionals', video: '/src/video/sell.mp4',buttonText: 'Sell Car' },
     { title: 'Rent a Car Today', paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/rental2.mp4',buttonText: 'Rent a Car' },
-    { title: 'Expert Mechanic Services', paragraph: 'All our cars are inspected and verified by professionals!', video: '/src/video/mechanic.mp4',buttonText: 'Hire Mechanic' },
+    { title: 'Expert Mechanic Services', paragraph: 'All our cars are inspected and verified by professionals!', video: '/src/video/mechanic.mp4',buttonText: 'Mechanic' },
     { title: 'Top-Notch Car Servicing', paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/service.mp4',buttonText: 'Service Car' },
     { title: 'Find Your Perfect Bus', paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/buss.mp4', buttonText: 'Search bus'},
     { title: "Fast Tow Services", paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/tow.mp4',buttonText: 'Tow Car' },
@@ -56,8 +56,8 @@ const Slider = () => {
             />
             {/* Overlay */}
             <div className="absolute inset-0 bg-[#000d6b] bg-opacity-30 flex flex-col items-center justify-center p-6">
-              <div className="text-center flex flex-col justify-center items-center text-white max-w-4xl">
-                <h1 className="text-[clamp(2rem,5vw,3rem)] font-bold mb-6">{slide.title}</h1>
+              <div className="text-center flex flex-col justify-center items-center text-white max-w-5xl">
+                <h1 className="text-[clamp(2rem,5vw,3rem)] font-bold mb-4">{slide.title}</h1>
                 
                 {/* Desktop View */}
                 <div className="hidden md:flex gap-3 justify-end py-2.5 pr-2.5 pl-3 text-base bg-white rounded-[80px] relative z-10">
@@ -78,8 +78,8 @@ const Slider = () => {
                 </div>
 
                 {/* Mobile View */}
-                <div className="flex md:hidden justify-center items-center text-xl gap-3 px-6 py-3 font-bold text-center text-white bg-[#000d6b] border border-blue-900 border-solid leading-[185%] rounded-[60px] relative w-[220px] z-10">
-                  <FaSearch className='text-[#f9a826] text-2xl'/>
+                <div className="flex md:hidden justify-center items-center text-xl gap-3 px-6 py-3 font-bold text-center text-white bg-[#000d6b] border border-blue-900 border-solid leading-[185%] rounded-[60px] relative w-[200px] z-10">
+                  <FaSearch className='text-[#f9a826] text-xl'/>
                   <div>{currentSlide.buttonText}
                   </div>
                 </div>
@@ -90,13 +90,13 @@ const Slider = () => {
       </div>
       
       <button 
-        className="absolute top-1/2 left-5 transform -translate-y-1/2 bg-white text-black p-2 rounded-full shadow-lg"
+        className="absolute top-1/2 left-1 md:left-3 transform -translate-y-1/2 bg-white text-black p-2 rounded-full shadow-lg"
         onClick={handlePrev}
       >
         ❮
       </button>
       <button 
-        className="absolute top-1/2 right-5 transform -translate-y-1/2 bg-white text-black p-2 rounded-full shadow-lg"
+        className="absolute top-1/2 right-1 md:right-3 transform -translate-y-1/2 bg-white text-black p-2 rounded-full shadow-lg"
         onClick={handleNext} 
       >
         ❯

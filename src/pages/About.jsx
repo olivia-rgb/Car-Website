@@ -65,8 +65,8 @@ const AboutSection = () => {
           transition={{ duration: 1 }}
         >
           {/* Step 1 */}
-          <div className="self-start w-full max-w-[350px] md:max-w-[30%] flex flex-col md:items-end md:mb-0 mb-8">
-            <div className="bg-slate-200 py-4  px-2 md:p-6 rounded-lg shadow-xl mb-4">
+          <div className="self-start w-full max-w-[300px] md:max-w-[30%] flex flex-col md:items-end md:mb-0 mb-8">
+            <div className="bg-slate-200 py-2  px-2 md:p-6 rounded-lg shadow-xl mb-4">
               <h3 className="text-xl font-semibold mb-4">
                 Browse through thousands of cars
               </h3>
@@ -82,25 +82,25 @@ const AboutSection = () => {
           </div>
 
           {/* Step 2 */}
-          <div className="self-end w-full max-w-[350px] md:max-w-[30%] flex flex-col md:items-start md:mb-0 mb-8">
+          <div className="self-end w-full max-w-[300px] md:max-w-[30%] flex flex-col md:items-start md:mb-0 mb-8">
             <img
               src={inspect}
               alt="Inspect"
               className="w-full h-[150px] md:h-[200px] object-cover rounded-lg border border-gray-300 mb-4"
             />
-            <div className="bg-slate-200 p-4 md:p-6 rounded-lg shadow-xl">
+            <div className="bg-slate-200 p-2 md:p-6 rounded-lg shadow-xl">
               <h3 className="text-xl font-semibold mb-4">
                 Check inspection report
               </h3>
               <p className="text-left">
-                It helps to understand the true condition of the car
+                To understand the true condition of the car
               </p>
             </div>
           </div>
 
           {/* Step 3 */}
-          <div className="self-start w-full max-w-[350px] md:max-w-[30%] flex flex-col md:items-end">
-            <div className="bg-slate-200 p-4 md:p-6 rounded-lg shadow-xl mb-4">
+          <div className="self-start w-full max-w-[300px] md:max-w-[30%] flex flex-col md:items-end">
+            <div className="bg-slate-200 p-2 md:p-6 rounded-lg shadow-xl mb-4">
               <h3 className="text-xl font-semibold mb-4">
                 Meet with our manager
               </h3>
