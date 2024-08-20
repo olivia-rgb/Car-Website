@@ -164,7 +164,7 @@ function Navbar() {
       </div>
 
       {/* Hamburger Menu (Mobile View) */}
-      <div className={`md:hidden fixed top-0 left-0 w-full bg-white text-[#000d6b] transition-all duration-300 py-2 z-50`}>
+      <div className={`md:hidden px-2 fixed top-0 left-0 w-full bg-white text-[#000d6b] transition-all duration-300  z-50`}>
         <div className="flex justify-between items-center px-4">
           <img src="/assets/brand-img/brand33.png" alt="logo" className="w-20" />
           <button onClick={toggleMenu} className="text-2xl">
