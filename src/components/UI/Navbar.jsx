@@ -165,8 +165,8 @@ function Navbar() {
 
       {/* Hamburger Menu (Mobile View) */}
       <div className={`md:hidden px-2 fixed top-0 left-0 w-full bg-white text-[#000d6b] transition-all duration-300  z-50`}>
-        <div className="flex justify-between items-center px-4">
-          <img src="/assets/brand-img/brand33.png" alt="logo" className="w-20" />
+        <div className="flex justify-between items-center ">
+          <img src="/assets/brand-img/brand33.png" alt="logo" className="w-15" />
           <button onClick={toggleMenu} className="text-2xl">
             {showMenu ? <FaTimes /> : <GiHamburgerMenu />}
           </button>
@@ -241,8 +241,8 @@ function Navbar() {
             <Link to="/about" className="block py-2 text-left hover:bg-gray-100">Mechanic</Link>
             <Link to="/about" className="block py-2 text-left hover:bg-gray-100">Tow</Link>
 
-            <Link to="/login" className="block py-2 text-left hover:bg-gray-100">Log In</Link>
-            <Link to="/signup" className="block py-2 text-left hover:bg-gray-100">Sign Up</Link>
+            <Link to="/login" className="block py-2 text-left hover:bg-gray-100 flex items-center"><FaSignInAlt className="mr-2" />Log In</Link>
+            <Link to="/signup" className="block py-2 text-left hover:bg-gray-100 flex items-center"><FaUser className="mr-2" />Sign Up</Link>
           </div>
         )}
       </div>

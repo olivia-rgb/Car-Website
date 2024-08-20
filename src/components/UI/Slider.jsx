@@ -3,7 +3,7 @@ import { FaSearch, FaChevronDown } from 'react-icons/fa';
 
 const Slider = () => {
   const slides = [
-    { title: "Let's Find Your Dream Car", paragraph: 'All our cars are inspected and verified by professionals ', image: '/assets/video/buycar.jpg', buttonText: 'Search Car' },
+    { title: "Find Your Dream Car", paragraph: 'All our cars are inspected and verified by professionals ', image: '/assets/video/buycar.jpg', buttonText: 'Search Car' },
     { title: 'Sell to Us Today', paragraph: 'All our cars are inspected and verified by professionals', image: '/assets/video/buycar2.jpg', buttonText: 'Sell Car' },
     { title: 'Rent a Car Today', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/rental2.mp4', buttonText: 'Rent a Car' },
     { title: 'Expert Mechanic Services', paragraph: 'All our cars are inspected and verified by professionals!', video: '/assets/video/mechanic.mp4', buttonText: 'Mechanic' },
