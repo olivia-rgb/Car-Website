@@ -3,17 +3,17 @@ import { FaSearch,FaChevronDown } from 'react-icons/fa'; // Import search icon f
 
 const Slider = () => {
   const slides = [
-    { title: "Let's Find Your Dream Car", paragraph: 'All our cars are inspected and verified by professionals ', video: '/src/video/buycar.mp4', buttonText: 'Search Car' },
-    { title: ' Sell to Us Today', paragraph: 'All our cars are inspected and verified by profAll our cars are inspected and verified by professionals', video: '/src/video/sell.mp4',buttonText: 'Sell Car' },
-    { title: 'Rent a Car Today', paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/rental2.mp4',buttonText: 'Rent a Car' },
-    { title: 'Expert Mechanic Services', paragraph: 'All our cars are inspected and verified by professionals!', video: '/src/video/mechanic.mp4',buttonText: 'Mechanic' },
-    { title: 'Top-Notch Car Servicing', paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/service.mp4',buttonText: 'Service Car' },
-    { title: 'Find Your Perfect Bus', paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/buss.mp4', buttonText: 'Search bus'},
-    { title: "Fast Tow Services", paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/tow.mp4',buttonText: 'Tow Car' },
-    { title: 'High-Quality Bikes', paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/bike2.mp4',buttonText: 'Search bike' },
-    { title: 'Discover Top-Quality Trucks', paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/truck.mov',buttonText: 'Search truck' },
-    { title: 'Durable Heavy Equipment', paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/heavy.mp4',buttonText: 'Heavy equps' },
-    { title: 'Quality Car Parts', paragraph: 'All our cars are inspected and verified by professionals', video: '/src/video/parts.mp4', buttonText: 'Search parts'},
+    { title: "Let's Find Your Dream Car", paragraph: 'All our cars are inspected and verified by professionals ', video: '/assets/video/buycar.mp4', buttonText: 'Search Car' },
+    { title: ' Sell to Us Today', paragraph: 'All our cars are inspected and verified by profAll our cars are inspected and verified by professionals', video: '/assets/video/sell.mp4',buttonText: 'Sell Car' },
+    { title: 'Rent a Car Today', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/rental2.mp4',buttonText: 'Rent a Car' },
+    { title: 'Expert Mechanic Services', paragraph: 'All our cars are inspected and verified by professionals!', video: '/assets/video/mechanic.mp4',buttonText: 'Mechanic' },
+    { title: 'Top-Notch Car Servicing', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/service.mp4',buttonText: 'Service Car' },
+    { title: 'Find Your Perfect Bus', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/buss.mp4', buttonText: 'Search bus'},
+    { title: "Fast Tow Services", paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/tow.mp4',buttonText: 'Tow Car' },
+    { title: 'High-Quality Bikes', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/bike2.mp4',buttonText: 'Search bike' },
+    { title: 'Discover Top-Quality Trucks', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/buytruck.mp4',buttonText: 'Search truck' },
+    { title: 'Durable Heavy Equipment', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/heavy.mp4',buttonText: 'Heavy equps' },
+    { title: 'Quality Car Parts', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/parts.mp4', buttonText: 'Search parts'},
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
