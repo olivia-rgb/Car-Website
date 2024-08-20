@@ -40,9 +40,12 @@ const Slider = () => {
       <div className="absolute top-0 left-0 w-full h-full flex transition-transform duration-500 ease-in-out">
         {slides.map((slide, index) => (
           <div
-            className={`absolute top-0 left-0 w-full h-full flex items-center justify-center transition-opacity duration-500 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
-            key={index}
-          >
+          className={`absolute top-0 left-0 w-full h-full flex items-center justify-center transition-opacity duration-500 ease-in-out ${
+            index === currentIndex ? 'opacity-100' : 'opacity-0'
+          }`}
+          key={index}
+        >
+        
             <video 
               className="w-full h-full object-cover"
               src={slide.video}
@@ -52,7 +55,7 @@ const Slider = () => {
               playsInline
             />
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center p-6">
+            <div className="absolute inset-0 bg-[#000d6b] bg-opacity-30 flex flex-col items-center justify-center p-6">
               <div className="text-center flex flex-col justify-center items-center text-white max-w-4xl">
                 <h1 className="text-[clamp(2rem,5vw,3rem)] font-bold mb-6">{slide.title}</h1>
                 
@@ -75,7 +78,7 @@ const Slider = () => {
                 </div>
 
                 {/* Mobile View */}
-                <div className="flex md:hidden items-center text-2xl gap-3 px-10 py-5 font-bold text-center text-white bg-[#000d6b] border border-blue-900 border-solid leading-[185%] rounded-[60px] relative w-[280px] z-10">
+                <div className="flex md:hidden justify-center items-center text-xl gap-3 px-6 py-3 font-bold text-center text-white bg-[#000d6b] border border-blue-900 border-solid leading-[185%] rounded-[60px] relative w-[220px] z-10">
                   <FaSearch className='text-[#f9a826] text-2xl'/>
                   <div>{currentSlide.buttonText}
                   </div>

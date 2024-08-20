@@ -34,19 +34,17 @@ const AboutSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-2xl text-[#000d6b] md:mr-20 md:text-4xl font-semibold mb-4">
+        <h2 className="text-3xl text-[#000d6b] md:mr-20 md:text-4xl font-semibold mb-4">
           Who We Are
         </h2>
-        <p className="text-lg max-w-2xl text-center">
+        <p className="text-lg w-full md:max-w-2xl text-center">
           We are a dedicated team of professionals committed to helping you find
           the best deals on cars. With years of experience in the automotive
           industry, we strive to provide a seamless and enjoyable car buying
           experience. Our mission is to empower our customers by offering
           transparency, trust, and exceptional service. We believe in building
           long-term relationships with our clients by providing honest advice
-          and guidance throughout the car buying process. Whether you're
-          purchasing your first vehicle or adding another to your collection, we
-          are here to ensure you make a well-informed decision with confidence.
+          and guidance throughout the car buying process. 
         </p>
       </motion.div>
 
@@ -67,8 +65,8 @@ const AboutSection = () => {
           transition={{ duration: 1 }}
         >
           {/* Step 1 */}
-          <div className="self-start w-full max-w-[400px] md:max-w-[30%] flex flex-col md:items-end md:mb-0 mb-8">
-            <div className="bg-slate-200 p-4 md:p-6 rounded-lg shadow-xl mb-4">
+          <div className="self-start w-full max-w-[350px] md:max-w-[30%] flex flex-col md:items-end md:mb-0 mb-8">
+            <div className="bg-slate-200 py-4  px-2 md:p-6 rounded-lg shadow-xl mb-4">
               <h3 className="text-xl font-semibold mb-4">
                 Browse through thousands of cars
               </h3>
@@ -84,7 +82,7 @@ const AboutSection = () => {
           </div>
 
           {/* Step 2 */}
-          <div className="self-end w-full max-w-[400px] md:max-w-[30%] flex flex-col md:items-start md:mb-0 mb-8">
+          <div className="self-end w-full max-w-[350px] md:max-w-[30%] flex flex-col md:items-start md:mb-0 mb-8">
             <img
               src={inspect}
               alt="Inspect"
@@ -101,7 +99,7 @@ const AboutSection = () => {
           </div>
 
           {/* Step 3 */}
-          <div className="self-start w-full max-w-[400px] md:max-w-[30%] flex flex-col md:items-end">
+          <div className="self-start w-full max-w-[350px] md:max-w-[30%] flex flex-col md:items-end">
             <div className="bg-slate-200 p-4 md:p-6 rounded-lg shadow-xl mb-4">
               <h3 className="text-xl font-semibold mb-4">
                 Meet with our manager
