@@ -12,6 +12,8 @@ import AllBus from "../pages/AllBus"
 import AllHeavy from "../pages/AllHeavy"
 import AllParts from "../pages/AllParts"
 import AllTruck from "../pages/AllTruck"
+import SellCar from "../pages/SellCar";
+import HireMechanic from "../pages/HireMechanic";
 
 const Routers = () => {
   return (
@@ -28,6 +30,8 @@ const Routers = () => {
       <Route path="/allheavy" element={<AllHeavy />} />
       <Route path="/allparts" element={<AllParts />} />
       <Route path="/alltruck" element={<AllTruck />} />
+      <Route path="/sellcar" element={<SellCar />} />
+      <Route path="/mechanic" element={<HireMechanic />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

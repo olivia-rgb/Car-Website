@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaQuestion } from "react-icons/fa";
-import Navbar2 from "../components/UI/Navbar2";
+import Navbar from "../components/UI/Navbar";
 import Footer from "../components/UI/Footer"; 
 import contact from "/assets/contact.avif";
-import backgroundImage from "/assets/bg-img/bgcar9.jpeg"
+
 
 const ContactPage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -48,10 +48,9 @@ const ContactPage = () => {
 
   return (
     <div className="flex flex-col  min-h-screen">
-      <div className="relative">
-        <div className="absolute  bg-blue-500 inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})`, height: '100px' }}></div>
-        <Navbar2 className="relative z-10 text-white bg-[#000d6b] bg-opacity-70" />
-      </div>
+      
+        <Navbar />
+      
 
       {/* Contact Us Section */}
       <div className="w-full flex flex-col justify-center items-center mt-40 p-6 bg-gray-100">
