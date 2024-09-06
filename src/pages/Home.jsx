@@ -42,8 +42,8 @@ function Home() {
       <Header />
       <div className='w-full'>
         <TrendingAds />
-        <BrowseCar />
         <PremiumBrands />
+        <BrowseCar />
         <SellCar />
         <Figures />
         <AllVehicle />
