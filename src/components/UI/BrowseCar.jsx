@@ -15,9 +15,9 @@ const BrowseCar = () => {
       initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 1 }}
-      className="mt-10"
+      className="mt-20"
     >
-      <div className='w-10/12 mx-auto'>
+      <div className='w-10/12 mx-auto h-full'>
 
         <div className="flex flex-col items-center pb-6 bg-white leading-[100%] text-[#000d6b] max-md:px-5">
           <div className="flex gap-5 mt-2.5 w-full max-w-[1400px] max-md:flex-wrap max-md:max-w-full">

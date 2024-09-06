@@ -9,7 +9,7 @@ import Carousel from './AdCarousel'; // Adjust the path as needed
 
 const TrendingAds = () => {
   return (
-    <div className="w-full sm:w-10/12 h-screen mx-auto grid grid-rows-8 my-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-40 mb-20 h-[240vh] sm:h-[140vh]">
+    <div className="w-full sm:w-10/12 h-screen mx-auto grid grid-rows-8 my-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-40 mb-20 h-[250vh] sm:h-[140vh]">
       {/* Column 1 spanning first six rows with list of links */}
       <div className="hidden lg:flex row-span-3 col-start-1 bg-[#000d6b]  flex-col items-start justify-center p-4 space-y-2 font-bold">
         <Link to="/cars" className="flex justify-between items-center text-white w-full">

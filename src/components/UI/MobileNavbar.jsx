@@ -27,19 +27,19 @@ const MobileNavbar = () => {
     <div className={`fixed bottom-0 left-0 right-0 bg-white shadow-lg ${showNavbar ? 'block' : 'hidden'} md:hidden`}>
       <div className="flex justify-between items-center py-2 px-4">
         <div className="flex flex-col items-center">
-          <FaHome className="text-xl" />
+          <FaHome className="text-xl text-[#000d6b]" />
           <span className="text-sm">Home</span>
         </div>
         <div className="flex flex-col items-center">
-          <FaShoppingCart className="text-xl" />
+          <FaShoppingCart className="text-xl text-[#000d6b]" />
           <span className="text-sm">Buy</span>
         </div>
         <div className="flex flex-col items-center">
-          <FaDollarSign className="text-xl" />
+          <FaDollarSign className="text-xl text-[#000d6b]" />
           <span className="text-sm">Sell</span>
         </div>
         <div className="flex flex-col items-center">
-          <FaUser className="text-xl" />
+          <FaUser className="text-xl text-[#000d6b]" />
           <span className="text-sm">Profile</span>
         </div>
       </div>
