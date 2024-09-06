@@ -17,14 +17,15 @@ import Buses from '../components/Buses';
 import TowVehicle from '../components/TowVehicle';
 import Mechanic from '../components/Mechanic';
 import { FadeLoader } from "react-spinners"; // Import the spinner component
-
+import TrendingAds from '../components/UI/TrendingAds';
+import MobileNavbar from '../components/UI/MobileNavbar'; 
 
 function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Simulate a loading delay
-    const timer = setTimeout(() => setLoading(false), 1000); // 2 seconds delay
+    const timer = setTimeout(() => setLoading(false), 1000); // 1 second delay
     return () => clearTimeout(timer); // Clean up timer on component unmount
   }, []);
 
@@ -40,6 +41,7 @@ function Home() {
     <div className='min-h-screen flex flex-col items-center justify-center overflow-x-hidden'>
       <Header />
       <div className='w-full'>
+        <TrendingAds />
         <BrowseCar />
         <PremiumBrands />
         <SellCar />
@@ -57,6 +59,8 @@ function Home() {
         <Contact />
         <Footer />
       </div>
+      {/* Include the MobileNavbar here */}
+      <MobileNavbar />
     </div>
   );
 }

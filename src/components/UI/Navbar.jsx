@@ -4,11 +4,13 @@ import { FaTimes, FaSignInAlt, FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { GoTriangleDown } from 'react-icons/go';
 import { motion, AnimatePresence } from 'framer-motion';
+import { GrLogin } from "react-icons/gr";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [showCarDropdownNew, setShowCarDropdownNew] = useState(false);
   const [showCarDropdownUsed, setShowCarDropdownUsed] = useState(false);
+  const [hoveredIcon, setHoveredIcon] = useState(null);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -28,7 +30,7 @@ function Navbar() {
       <div className="fixed top-0 left-0 w-full bg-white text-[#000d6b] z-50">
         <div className="hidden md:flex justify-between items-center w-full px-10 mx-auto">
           <div className="flex gap-4 items-center">
-            <img src="/assets/brand-img/brand33.png" alt="logo" className="w-20 mr-10" />
+            <img src="/assets/brand-img/brand33.png" alt="logo" className="w-12 mr-10" />
             <Link to="/about" className="hover:underline hover:text-[#f9a826] flex items-center">About</Link>
             <Link to="/contact" className="hover:underline hover:text-[#f9a826] flex items-center">Contact</Link>
 
@@ -93,20 +95,44 @@ function Navbar() {
                 )}
               </AnimatePresence>
             </div>
-
-            <Link to="/sellcar" className="hover:underline hover:text-[#f9a826] flex items-center">Sell Your Car</Link>
-            <Link to="/mechanic" className="hover:underline hover:text-[#f9a826] flex items-center">Hire Mechanic</Link>
           </div>
 
           <div className="flex gap-4 items-center">
-            <Link to="/login" className="py-2 font-bold px-4 rounded-md flex items-center bg-[#f9a826] text-[#000d6b] hover:bg-[#e89c1c]">
-              <FaSignInAlt className="mr-2" />
-              Log In
-            </Link>
-            <Link to="/signup" className="py-2 px-4 font-bold rounded-md flex items-center bg-[#f9a826] text-[#000d6b] hover:bg-[#e89c1c]">
-              <FaUser className="mr-2" />
-              Sign Up
-            </Link>
+            <div 
+              className="relative"
+              onMouseEnter={() => setHoveredIcon('login')}
+              onMouseLeave={() => setHoveredIcon(null)}
+            >
+              <Link 
+                to="/login" 
+                className="p-2 rounded-full flex items-center bg-[#f9a826] text-[#000d6b] hover:bg-[#e89c1c]"
+              >
+                <GrLogin className="text-xl text-black" />
+              </Link>
+              {hoveredIcon === 'login' && (
+                <span className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 text-sm font-bold px-6 py-2 bg-black text-white whitespace-nowrap">
+                  Log In
+                </span>
+              )}
+            </div>
+
+            <div 
+              className="relative"
+              onMouseEnter={() => setHoveredIcon('signup')}
+              onMouseLeave={() => setHoveredIcon(null)}
+            >
+              <Link 
+                to="/signup" 
+                className="p-2 rounded-full flex items-center bg-[#f9a826] text-[#000d6b] hover:bg-[#e89c1c]"
+              >
+                <FaUser className="text-xl" />
+              </Link>
+              {hoveredIcon === 'signup' && (
+                <span className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 text-sm font-bold px-6 py-2 bg-black text-white whitespace-nowrap">
+                  Sign Up
+                </span>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -125,7 +151,7 @@ function Navbar() {
               <Link to="/home" className="hover:underline py-3 hover:text-[#f9a826]">Home</Link>
               <Link to="/about" className="hover:underline py-3 hover:text-[#f9a826]">About</Link>
               <Link to="/contact" className="hover:underline py-3 hover:text-[#f9a826]">Contact</Link>
-              
+
               {/* Shop New Dropdown */}
               <div className="relative">
                 <button
@@ -170,10 +196,43 @@ function Navbar() {
                 )}
               </div>
 
-              <Link to="/sellcar" className="hover:underline py-3 hover:text-[#f9a826]">Sell Your Car</Link>
-              <Link to="/mechanic" className="hover:underline py-3 hover:text-[#f9a826]">Hire Mechanic</Link>
-              <Link to="/login" className="hover:underline py-3 flex items-center hover:text-[#f9a826]"><FaSignInAlt className="mr-2" />Log In</Link>
-              <Link to="/signup" className="hover:underline py-3 flex items-center hover:text-[#f9a826]"><FaUser className="mr-2" />Sign Up</Link>
+              <div className="flex gap-4 items-center">
+            <div 
+              className="relative"
+              onMouseEnter={() => setHoveredIcon('login')}
+              onMouseLeave={() => setHoveredIcon(null)}
+            >
+              <Link 
+                to="/login" 
+                className="p-2 rounded-full flex items-center bg-[#f9a826] text-[#000d6b] hover:bg-[#e89c1c]"
+              >
+                <GrLogin className="text-xl text-black" />
+              </Link>
+              {hoveredIcon === 'login' && (
+                <span className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 text-sm font-bold px-6 py-2 bg-black text-white whitespace-nowrap">
+                  Log In
+                </span>
+              )}
+            </div>
+
+            <div 
+              className="relative"
+              onMouseEnter={() => setHoveredIcon('signup')}
+              onMouseLeave={() => setHoveredIcon(null)}
+            >
+              <Link 
+                to="/signup" 
+                className="p-2 rounded-full flex items-center bg-[#f9a826] text-[#000d6b] hover:bg-[#e89c1c]"
+              >
+                <FaUser className="text-xl" />
+              </Link>
+              {hoveredIcon === 'signup' && (
+                <span className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 text-sm font-bold px-6 py-2 bg-black text-white whitespace-nowrap">
+                  Sign Up
+                </span>
+              )}
+            </div>
+          </div>
             </div>
           </div>
         )}

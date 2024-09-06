@@ -3,6 +3,7 @@ import mybg from "../video/mybggg.mp4";
 import { motion } from "framer-motion";
 import Navbar from "./UI/Navbar"
 import Slider from "./UI/Slider";
+import Hero from "./UI/Hero";
 
 const Header = () => {
   const videoRef = useRef(null);
@@ -52,7 +53,7 @@ const Header = () => {
 
       {/* Navbar and Hero components */}
       <Navbar />
-      <Slider />
+      <Hero />
     </motion.div>
   );
 };
