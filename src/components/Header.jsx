@@ -34,7 +34,7 @@ const Header = () => {
       viewport={{
         amount: "all",
       }}
-      className="w-[98.7vw] h-full mb-40"
+      className="w-[98.7vw] h-full mb-40 lg:mb-0"
     >
 
        {/* Overlay to darken the video */}
