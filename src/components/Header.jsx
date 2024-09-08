@@ -34,18 +34,8 @@ const Header = () => {
       viewport={{
         amount: "all",
       }}
-      className="w-[98.7vw] h-[100vh]"
+      className="w-[98.7vw] h-full mb-40"
     >
-      {/* Background video */}
-      <video
-        ref={videoRef}
-        className="w-[98.7vw] max-[450px]:h-[90vh] h-[93vh] mt-[-1rem] absolute object-cover z-[-1]"
-        src={mybg}
-        autoPlay
-        loop
-        muted
-        playsInline
-      ></video>
 
        {/* Overlay to darken the video */}
        <div className=" bg-[#000d6b] w-[98.7vw] max-[450px]:h-[90vh] h-[93vh] mt-[-1rem] absolute opacity-30 z-[-1]"></div>

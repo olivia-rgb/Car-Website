@@ -9,7 +9,7 @@ import Carousel from './AdCarousel'; // Adjust the path as needed
 
 const TrendingAds = () => {
   return (
-    <div className="w-full sm:w-10/12  mx-auto grid grid-rows-8 my-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-40 mb-20 z-10 h-[300vh] sm:h-[140vh]">
+    <div className="w-full sm:w-10/12  mx-auto grid grid-rows-8 my-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-40 h-[200vh] sm:h-[140vh]">
       {/* Column 1 spanning first six rows with list of links */}
       <div className="hidden lg:flex row-span-3 col-start-1 bg-[#000d6b]  flex-col items-start justify-center p-4 space-y-2 font-bold">
         <Link to="/cars" className="flex justify-between items-center text-white w-full">
@@ -67,11 +67,11 @@ const TrendingAds = () => {
       </div>
 
       {/* Responsive Grid for Items */}
-      <div className="col-span-4 my-40 lg:mt-0">
+      <div className="col-span-4 mt lg:mt-0">
 
   <h2 className="text-xl font-bold text-center mb-4 sm:hidden">Trending Ads</h2>
   
-  <div className="grid gap-2 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
+  <div className="grid  gap-2 grid-cols-2 sm:grid-cols-2 lg:grid-cols-4">
     {/* Item 1 */}
     <div className="p-2 flex flex-col items-center text-center">
       <img src="/assets/vehicle-img/car4.png" alt="Car" className="w-full h-40 object-cover mb-2" />

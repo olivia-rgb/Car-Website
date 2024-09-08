@@ -6,14 +6,14 @@ import backgroundImage from "../../../public/assets/bg-img/bgcar12.jpeg";
 const PremiumBrands = () => {
   return (
     <div
-      className="relative w-full bg-cover bg-center"
+      className="relative w-full bg-cover bg-center "
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <motion.div
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 1 }}
-        className="mt-20 pb-24"
+        className="mt-40 pb-24"
       >
         <div className='w-10/12 mx-auto '>
           <div className="flex flex-col items-center pt-10 pb-10 leading-[100%] text-[#000d6b] max-md:px-5">
