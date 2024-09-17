@@ -39,14 +39,14 @@ const FiguresSection = () => {
 
   return (
     <div
-      className="relative my-20 xl:gap-16 sm:py-16 xl:px-16 bg-cover bg-center"
+      className="relative my-10  bg-cover bg-center"
       style={{ backgroundImage: "url('/assets/bg-img/bgcar11.jpeg')" }} // Adjust the path as needed
     >
-      <div className="px-8 grid grid-cols-2 gap-4 md:grid-cols-4 relative z-10">
+      <div className="grid w-11/12 grid-cols-2 gap-4 md:grid-cols-4 justify-items-center  py-6 sm:py-10">
         {figuresList.map((figure, index) => (
           <motion.div
             key={index}
-            className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0 w-full sm:w-auto"
+            className="flex flex-col items-center justify-center w-full"
             ref={ref}
             initial="hidden"
             animate={controls}
@@ -56,7 +56,7 @@ const FiguresSection = () => {
             }}
           >
             <h2 className="text-white text-2xl md:text-4xl font-bold flex flex-row pb-4 md:pb-8">
-              <Suspense fallback={<div style={{ height: '2rem', width: '2rem' }} />} >
+              <Suspense fallback={<div style={{ height: '2rem', width: '2rem' }} />}>
                 {inView && (
                   <AnimatedNumbers
                     includeComma
@@ -73,7 +73,7 @@ const FiguresSection = () => {
               </Suspense>
               <span className="text-white">M</span>
             </h2>
-            <p className="text-white text-sm md:text-xl pt-8 border-t font-bold">
+            <p className="text-white text-sm md:text-xl pt-4 border-t font-bold text-center">
               {figure.metric}
             </p>
           </motion.div>

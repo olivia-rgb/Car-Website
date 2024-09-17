@@ -6,8 +6,8 @@ import backgroundImage from "../../../public/assets/bg-img/bgcar9.jpeg";
 const PremiumBrands = () => {
   return (
     <div
-      className="relative w-full bg-cover bg-center"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      className="relative w-full bg-cover bg-center bg-[#000d6b]"
+      
     >
       <motion.div
         initial={{ opacity: 0, y: 200 }}
@@ -28,42 +28,42 @@ const PremiumBrands = () => {
             </div>
           </div>
 
-          <div className="flex gap-5 justify-between items-start text-lg font-medium leading-5 text-center whitespace-nowrap text-slate-950 max-md:flex-wrap">
-            <div className="brand-item">
+          <div className="flex gap-5 justify-between item-center text-lg font-medium leading-5 text-center whitespace-nowrap text-slate-950 max-md:flex-wrap">
+            <div className="flex flex-col items-center justify-center">
               <img src='/assets/brand-img/brand1.jpg.png' className="brand-img" alt="Audi"/>
-              <div className="mt-3.5 font-bold text-xl text-white">Audi</div>
+              <div className="mt-3.5 font-bold text-lg text-white">Audi</div>
             </div>
-            <div className="brand-item">
+            <div className="flex flex-col items-center justify-center">
               <img src='/assets/brand-img/brand2.jpg.png' className="brand-img" alt="BMW"/>
-              <div className="mt-3.5  font-bold text-xl text-white ">BMW</div>
+              <div className="mt-3.5  font-bold text-lg text-white ">BMW</div>
             </div>
-            <div className="brand-item">
+            <div className="flex flex-col items-center justify-center">
               <img src='/assets/brand-img/brand3.jpg.png' className="brand-img" alt="Ford"/>
-              <div className="mt-3.5 font-bold text-xl text-white ">Ford</div>
+              <div className="mt-3.5 font-bold text-lg text-white ">Ford</div>
             </div>
-            <div className="brand-item">
+            <div className="flex flex-col items-center justify-center">
               <img src='/assets/brand-img/brand4.jpg.png' className="brand-img" alt="Mercedes"/>
-              <div className="mt-3.5 font-bold text-xl text-white ">Mercedes</div>
+              <div className="mt-3.5 font-bold text-lg text-white ">Mercedes</div>
             </div>
-            <div className="brand-item">
+            <div className="flex flex-col items-center justify-center">
               <img src='/assets/brand-img/brand5.jpg.png' className="brand-img" alt="Peugeot"/>
-              <div className="mt-3.5 font-bold text-xl text-white ">Peugeot</div>
+              <div className="mt-3.5 font-bold text-lg text-white ">Peugeot</div>
             </div>
-            <div className="brand-item">
+            <div className="flex flex-col items-center justify-center">
               <img src='/assets/brand-img/brand6.jpg.png' className="brand-img" alt="Volkswagen"/>
-              <div className="mt-3.5 font-bold text-xl text-white ">Volkswagen</div>
+              <div className="mt-3.5 font-bold text-lg text-white ">Volks</div>
             </div>
-            <div className="brand-item">
+            <div className="flex flex-col items-center justify-center">
               <img src='/assets/brand-img/brand7.jpg.png' className="brand-img" alt="Bentley"/>
-              <div className="mt-3.5 font-bold text-xl text-white ">Bentley</div>
+              <div className="mt-3.5 font-bold text-lg text-white ">Bentley</div>
             </div>
-            <div className="brand-item">
+            <div className="flex flex-col items-center justify-center">
               <img src='/assets/brand-img/brand8.jpg.png' className="brand-img" alt="Nissan"/>
-              <div className="mt-3.5 font-bold text-xl text-white">Nissan</div>
+              <div className="mt-3.5 font-bold text-lg text-white">Nissan</div>
             </div>
-            <div className="brand-item">
+            <div className="flex flex-col items-center justify-center">
               <img src='/assets/brand-img/brand9.jpg.png' className="brand-img" alt="Jeep"/>
-              <div className="mt-3.5 font-bold text-xl text-white">Jeep</div>
+              <div className="mt-3.5 font-bold text-lg text-white">Jeep</div>
             </div>
           </div>
         </div>

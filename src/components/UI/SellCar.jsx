@@ -10,15 +10,15 @@ const SellCar = () => {
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className='flex flex-col items-center mb-20 md:hidden w-full'
+        className='flex flex-col items-center m md:hidden w-full'
       >
-        <div className="text-3xl md:text-4xl font-bold leading-8 max-w-full text-[#000d6b]  mb-8 w-11/12">
+        <div className="text-2xl font-bold leading-8 max-w-full text-[#000d6b]  mb-8 w-11/12">
           For a Great Price on Your Car <br /> Sell To Us Today
         </div>
         <div className='w-full flex justify-center mt-4'>
-          <img src="/assets/video/selll2.jpg" alt="Vehicle 1" className='w-11/12' />
+          <img src="/assets/slider-img/buy.jpg" alt="Vehicle 1" className='w-11/12' />
         </div>
-        <div className="text-xl pt-3 leading-6 max-w-full text-black font-semibold w-11/12">
+        <div className="text-lg pt-3 leading-6 max-w-full text-black font-semibold w-11/12">
           We are committed to providing our customers with an exceptional service.
         </div>
         <div className="flex flex-col  max-w-full text-[#000d6b] mt-4 w-11/12">
@@ -62,7 +62,7 @@ const SellCar = () => {
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className='pt-5 pb-20'
+            className='pt-5 pb-'
           >
             <img src="/assets/video/selll.jpg" alt="Vehicle 3" />
           </motion.div>

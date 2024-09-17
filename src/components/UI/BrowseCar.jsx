@@ -17,7 +17,7 @@ const BrowseCar = () => {
       initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1, duration: 1 }}
-      className="my-32"
+      className="my-20"
     >
       <div className='w-11/12 mx-auto h-full'>
 
