@@ -31,7 +31,7 @@ function Home() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-[50vh]">
+      <div className="flex justify-center items-center min-h-[80vh]">
         <FadeLoader color="#000d6b" size={50} />
       </div>
     );
