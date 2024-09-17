@@ -25,13 +25,13 @@ function Home() {
 
   useEffect(() => {
     // Simulate a loading delay
-    const timer = setTimeout(() => setLoading(false), 1000); // 1 second delay
+    const timer = setTimeout(() => setLoading(false), 500); // 1 second delay
     return () => clearTimeout(timer); // Clean up timer on component unmount
   }, []);
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-screen">
+      <div className="flex justify-center items-center min-h-[50vh]">
         <FadeLoader color="#000d6b" size={50} />
       </div>
     );

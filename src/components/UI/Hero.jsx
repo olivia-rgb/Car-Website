@@ -54,7 +54,7 @@ const Hero = () => {
   return (
     <div className="relative w-full h-screen    flex flex-col">
       {/* Video/Slide Section - Increased height to 3/4 */}
-      <div className="w-full  h-[54vh] relative overflow-hidden">
+      <div className="w-full  h-[53vh] relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full flex transition-transform duration-500 ease-in-out">
           {slides.map((slide, index) => (
             <div
@@ -127,7 +127,7 @@ const Hero = () => {
       </div>
 
       {/* Grid Section - Reduced height and made responsive */}
-      <div className="w-full h-[46vh] grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6  mx-auto">
+      <div className="w-full h-[47vh] grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6  mx-auto">
         {imagesWithNames.map((item, index) => (
           <div key={index} className="flex flex-col  py-3 md:py-2 mb-2 ml-1 mr-1 shadow-lg bg-white items-center justify-center  rounded-sm ">
             <img 
