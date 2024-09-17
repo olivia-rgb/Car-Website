@@ -9,7 +9,7 @@ import Carousel from './AdCarousel'; // Adjust the path as needed
 
 const TrendingAds = () => {
   return (
-    <div className="w-full sm:w-11/12  mx-auto flex flex-col justify-center px-2 md:px-2 mb-40 mt-40 gap-4">
+    <div className="w-full sm:w-11/12  mx-auto flex flex-col justify-center px-2 md:px-2 mb-20 mt-32 gap-4">
 
       <h2 className="text-3xl md:text-4xl font-bold text-center text-[#000d6b] md:text-left mb-4">Trending Ads</h2>
 
