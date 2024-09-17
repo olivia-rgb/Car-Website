@@ -5,7 +5,7 @@ const Hero = () => {
   const slides = [
     { title: "Find Your Dream Car", paragraph: 'All our cars are inspected and verified by professionals', image: '/assets/video/dream2.jpg', buttonText: 'Search Car' },
     { title: 'Sell to Us Today', paragraph: 'All our cars are inspected and verified by professionals', image: '/assets/video/buycar2.jpg', buttonText: 'Sell Car' },
-    { title: 'Rent a Car Today', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/rental2.mp4', buttonText: 'Rent a Car' },
+    { title: 'Rent a Car Today', paragraph: 'All our cars are inspected and verified by professionals', image: '/assets/video/rentt2.jpg', buttonText: 'Rent a Car' },
     { title: 'Expert Mechanic Services', paragraph: 'All our cars are inspected and verified by professionals!', video: '/assets/video/mechanic.mp4', buttonText: 'Mechanic' },
     { title: 'Top-Notch Car Servicing', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/service.mp4', buttonText: 'Service Car' },
     { title: 'Find Your Perfect Bus', paragraph: 'All our cars are inspected and verified by professionals', video: '/assets/video/buss.mp4', buttonText: 'Search bus' },
@@ -22,7 +22,7 @@ const Hero = () => {
     { image: '/assets/car-img/smmbus.png', name: 'Microbuses' },
     { image: '/assets/car-img/smpart.png', name: 'Parts' },
     { image: '/assets/car-img/smbike.png', name: 'Bikes' },
-    { image: '/assets/car-img/jet.png', name: 'Jets' },
+    { image: '/assets/car-img/jeto.png', name: 'Jets' },
     { image: '/assets/car-img/smkeke.png', name: 'Tricycle' },
     { image: '/assets/car-img/smtruck.png', name: 'Trucks' },
     { image: '/assets/car-img/smheavy.png', name: 'Heavy Equips' },
@@ -52,9 +52,9 @@ const Hero = () => {
   const currentSlide = slides[currentIndex];
 
   return (
-    <div className="relative w-full h-screen mt-2 flex flex-col">
+    <div className="relative w-full h-screen    flex flex-col">
       {/* Video/Slide Section - Increased height to 3/4 */}
-      <div className="w-full h-3/4 relative overflow-hidden">
+      <div className="w-full  h-3/4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full flex transition-transform duration-500 ease-in-out">
           {slides.map((slide, index) => (
             <div
@@ -127,15 +127,15 @@ const Hero = () => {
       </div>
 
       {/* Grid Section - Reduced height and made responsive */}
-      <div className="w-full h-1/4 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 bg-white mx-auto">
+      <div className="w-full h-1/4 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6  mx-auto">
         {imagesWithNames.map((item, index) => (
-          <div key={index} className="flex flex-col items-center justify-center border border-[#000d6b] rounded-sm ">
+          <div key={index} className="flex flex-col  py-3 md:py-2 mb-2 ml-1 mr-1 shadow-lg bg-white items-center justify-center  rounded-sm ">
             <img 
               src={item.image} 
               alt={item.name} 
-              className="w-24 h-16 object-cover mb-1" 
+              className="w-auto h-16 md:h-28 object-cover mb-1" 
             />
-            <p className="text-center text-sm font-semibold">{item.name}</p>
+            <p className="text-center my-auto text-md text-[#000d6b] font-semibold">{item.name}</p>
           </div>
         ))}
       </div>
